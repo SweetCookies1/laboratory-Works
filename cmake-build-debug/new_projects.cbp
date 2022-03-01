@@ -116,6 +116,18 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/string_.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeExtraSpaces.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeExtraSpaces.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeNonLetters.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeNonLetters.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/main.c">
 			<Option target="new-projects"/>
 		</Unit>
