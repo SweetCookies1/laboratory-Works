@@ -8,7 +8,7 @@ size_t strlen_(const char *begin) {
 }
 
 char* find(char *begin, char *end, int ch) {
-    while (begin != end && *begin != ch)
+    while (begin != end && *begin < ch)
         begin++;
     return begin;
 }
@@ -25,14 +25,14 @@ char* findSpace(char *begin) {
     return begin;
 }
 
-char* findNonSpaceReverse(char *rbegin, const char *rEnd) {
-    while (rbegin != rEnd && isspace(*rbegin))
+char* findNonSpaceReverse(char *rbegin, const char *rend) {
+    while (rbegin < rend && isspace(*rbegin))
         rbegin--;
     return rbegin;
 }
 
 char* findSpaceReverse(char *rbegin, const char *rend) {
-    while (rbegin != rend && !isspace(*rbegin))
+    while (rbegin < rend && !isspace(*rbegin))
         rbegin--;
     return rbegin;
 }
@@ -48,7 +48,7 @@ int strcmp(const char *lhs, const char *rhs) {
 char* copy(const char *beginSource, const char *endSource, char *beginDestination) {
     size_t dif = endSource - beginSource;
     memcpy(beginDestination, beginSource, dif);
-    return beginDestination + dif;
+    return beginDestination;
 }
 
 char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
@@ -71,4 +71,14 @@ char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
         rbeginSource--;
     }
     return beginDestination;
+}
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
 }

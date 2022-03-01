@@ -116,6 +116,18 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/string_.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStart.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStart.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeExtraSpaces.c">
 			<Option target="data_structures"/>
 		</Unit>

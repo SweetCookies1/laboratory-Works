@@ -153,6 +153,54 @@ string/string_.c.s:
 	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string_.c.s
 .PHONY : string/string_.c.s
 
+string/tasks/digitToStart.obj: string/tasks/digitToStart.c.obj
+.PHONY : string/tasks/digitToStart.obj
+
+# target to build an object file
+string/tasks/digitToStart.c.obj:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStart.c.obj
+.PHONY : string/tasks/digitToStart.c.obj
+
+string/tasks/digitToStart.i: string/tasks/digitToStart.c.i
+.PHONY : string/tasks/digitToStart.i
+
+# target to preprocess a source file
+string/tasks/digitToStart.c.i:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStart.c.i
+.PHONY : string/tasks/digitToStart.c.i
+
+string/tasks/digitToStart.s: string/tasks/digitToStart.c.s
+.PHONY : string/tasks/digitToStart.s
+
+# target to generate assembly for a file
+string/tasks/digitToStart.c.s:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStart.c.s
+.PHONY : string/tasks/digitToStart.c.s
+
+string/tasks/removeAdjacentEqualLetters.obj: string/tasks/removeAdjacentEqualLetters.c.obj
+.PHONY : string/tasks/removeAdjacentEqualLetters.obj
+
+# target to build an object file
+string/tasks/removeAdjacentEqualLetters.c.obj:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj
+.PHONY : string/tasks/removeAdjacentEqualLetters.c.obj
+
+string/tasks/removeAdjacentEqualLetters.i: string/tasks/removeAdjacentEqualLetters.c.i
+.PHONY : string/tasks/removeAdjacentEqualLetters.i
+
+# target to preprocess a source file
+string/tasks/removeAdjacentEqualLetters.c.i:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.i
+.PHONY : string/tasks/removeAdjacentEqualLetters.c.i
+
+string/tasks/removeAdjacentEqualLetters.s: string/tasks/removeAdjacentEqualLetters.c.s
+.PHONY : string/tasks/removeAdjacentEqualLetters.s
+
+# target to generate assembly for a file
+string/tasks/removeAdjacentEqualLetters.c.s:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.s
+.PHONY : string/tasks/removeAdjacentEqualLetters.c.s
+
 string/tasks/removeExtraSpaces.obj: string/tasks/removeExtraSpaces.c.obj
 .PHONY : string/tasks/removeExtraSpaces.obj
 
@@ -213,6 +261,12 @@ help:
 	@echo ... string/string_.obj
 	@echo ... string/string_.i
 	@echo ... string/string_.s
+	@echo ... string/tasks/digitToStart.obj
+	@echo ... string/tasks/digitToStart.i
+	@echo ... string/tasks/digitToStart.s
+	@echo ... string/tasks/removeAdjacentEqualLetters.obj
+	@echo ... string/tasks/removeAdjacentEqualLetters.i
+	@echo ... string/tasks/removeAdjacentEqualLetters.s
 	@echo ... string/tasks/removeExtraSpaces.obj
 	@echo ... string/tasks/removeExtraSpaces.i
 	@echo ... string/tasks/removeExtraSpaces.s

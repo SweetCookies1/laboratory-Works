@@ -1,15 +1,13 @@
-#include <memory.h>
-#include "removeExtraSpaces.h"
+#include "removeAdjacentEqualLetters.h"
 
-void removeExtraSpaces(char *s) {
+void removeAdjacentEqualLetters(char *s) {
     if (*s == '\0')
         return;
+
     char *lastWriten = s;
     s++;
     while (*s) {
-        if (isspace(*lastWriten) && isspace(*s)) {
-            *lastWriten = ' ';
-        } else {
+        if (*lastWriten != *s) {
             lastWriten++;
             memcpy(lastWriten, s, sizeof(char));
         }
