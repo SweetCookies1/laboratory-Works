@@ -14,4 +14,5 @@ void removeAdjacentEqualLetters(char *s) {
         s++;
     }
     lastWriten++;
+    *lastWriten = '\0';
 }

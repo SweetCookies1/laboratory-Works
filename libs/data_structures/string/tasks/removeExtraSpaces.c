@@ -16,4 +16,5 @@ void removeExtraSpaces(char *s) {
         s++;
     }
     lastWriten++;
+    *lastWriten = '\0';
 }

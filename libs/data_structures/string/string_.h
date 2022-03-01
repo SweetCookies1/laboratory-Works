@@ -38,4 +38,6 @@ char* copyIfReverse(char *rBeginSource, const char *rEndSource, char *beginDesti
 
 int getWord(char *beginSearch, WordDescriptor *word);
 
+char *getEndOfString(char *s);
+
 #endif

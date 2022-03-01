@@ -8,7 +8,7 @@ size_t strlen_(const char *begin) {
 }
 
 char* find(char *begin, char *end, int ch) {
-    while (begin != end && *begin < ch)
+    while (begin != end && *begin != ch)
         begin++;
     return begin;
 }
@@ -26,13 +26,13 @@ char* findSpace(char *begin) {
 }
 
 char* findNonSpaceReverse(char *rbegin, const char *rend) {
-    while (rbegin < rend && isspace(*rbegin))
+    while (rbegin != rend && isspace(*rbegin))
         rbegin--;
     return rbegin;
 }
 
 char* findSpaceReverse(char *rbegin, const char *rend) {
-    while (rbegin < rend && !isspace(*rbegin))
+    while (rbegin != rend && !isspace(*rbegin))
         rbegin--;
     return rbegin;
 }
@@ -48,7 +48,7 @@ int strcmp(const char *lhs, const char *rhs) {
 char* copy(const char *beginSource, const char *endSource, char *beginDestination) {
     size_t dif = endSource - beginSource;
     memcpy(beginDestination, beginSource, dif);
-    return beginDestination;
+    return beginDestination + dif;
 }
 
 char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
@@ -81,4 +81,8 @@ int getWord(char *beginSearch, WordDescriptor *word) {
     word->end = findSpace(word->begin);
 
     return 1;
+}
+
+char *getEndOfString(char *s) {
+    return s + strlen(s);
 }
