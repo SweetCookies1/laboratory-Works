@@ -78,19 +78,49 @@ CMakeFiles/new_projects.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new_projects.dir/main.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\main.c -o CMakeFiles\new_projects.dir\main.c.s
 
+CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.obj: CMakeFiles/new_projects.dir/flags.make
+CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.obj: ../libs/algorithms/array_operations/array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\new_projects.dir\libs\algorithms\array_operations\array.c.obj -c C:\Users\user\CLionProjects\new-projects\libs\algorithms\array_operations\array.c
+
+CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\user\CLionProjects\new-projects\libs\algorithms\array_operations\array.c > CMakeFiles\new_projects.dir\libs\algorithms\array_operations\array.c.i
+
+CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\libs\algorithms\array_operations\array.c -o CMakeFiles\new_projects.dir\libs\algorithms\array_operations\array.c.s
+
+CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.obj: CMakeFiles/new_projects.dir/flags.make
+CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.obj: ../libs/data_structures/string_/string_.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\new_projects.dir\libs\data_structures\string_\string_.c.obj -c C:\Users\user\CLionProjects\new-projects\libs\data_structures\string_\string_.c
+
+CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\user\CLionProjects\new-projects\libs\data_structures\string_\string_.c > CMakeFiles\new_projects.dir\libs\data_structures\string_\string_.c.i
+
+CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\libs\data_structures\string_\string_.c -o CMakeFiles\new_projects.dir\libs\data_structures\string_\string_.c.s
+
 # Object files for target new_projects
 new_projects_OBJECTS = \
-"CMakeFiles/new_projects.dir/main.c.obj"
+"CMakeFiles/new_projects.dir/main.c.obj" \
+"CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.obj" \
+"CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.obj"
 
 # External object files for target new_projects
 new_projects_EXTERNAL_OBJECTS =
 
 new_projects.exe: CMakeFiles/new_projects.dir/main.c.obj
+new_projects.exe: CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.obj
+new_projects.exe: CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.obj
 new_projects.exe: CMakeFiles/new_projects.dir/build.make
 new_projects.exe: CMakeFiles/new_projects.dir/linklibs.rsp
 new_projects.exe: CMakeFiles/new_projects.dir/objects1.rsp
 new_projects.exe: CMakeFiles/new_projects.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable new_projects.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable new_projects.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\new_projects.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

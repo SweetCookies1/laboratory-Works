@@ -74,6 +74,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/array_operations/array.c">
+			<Option target="new_projects"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/array_operations/array.h">
+			<Option target="new_projects"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string_/string_.c">
+			<Option target="new_projects"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string_/string_.h">
+			<Option target="new_projects"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/main.c">
 			<Option target="new_projects"/>
 		</Unit>
