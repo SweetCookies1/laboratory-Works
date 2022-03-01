@@ -51,25 +51,19 @@ char* copy(const char *beginSource, const char *endSource, char *beginDestinatio
     return beginDestination + dif;
 }
 
-char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
-    while (beginSource < endSource) {
-        if (f(*beginSource)) {
-            *beginDestination = *beginSource;
-            beginDestination++;
-        }
-        beginSource++;
-    }
+char* copyIf(const char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
+    for (const char *begin = beginSource; begin < endSource; ++begin)
+        if (f(*begin))
+            *beginDestination++ = *begin;
+
     return beginDestination;
 }
 
-char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)){
-    while (rbeginSource > rendSource) {
-        if (f(*rbeginSource)) {
-            *beginDestination = *rbeginSource;
-            beginDestination++;
-        }
-        rbeginSource--;
-    }
+char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
+    for (char *begin = rbeginSource; begin > rendSource; --begin)
+        if (f(*begin))
+            *beginDestination++ = *begin;
+
     return beginDestination;
 }
 

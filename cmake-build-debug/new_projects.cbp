@@ -122,6 +122,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStart.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStartNotReverse.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStartNotReverse.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c">
 			<Option target="data_structures"/>
 		</Unit>
@@ -138,6 +144,12 @@
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeNonLetters.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/test_task.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/test_task.h">
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/main.c">

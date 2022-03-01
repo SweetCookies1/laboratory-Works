@@ -32,9 +32,9 @@ int strcmp(const char *lhs, const char *rhs);
 
 char* copy(const char *beginSource, const char *endSource, char *beginDestination);
 
-char* copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int));
+char* copyIf(const char *beginSource, const char *endSource, char *beginDestination, int (*f)(int));
 
-char* copyIfReverse(char *rBeginSource, const char *rEndSource, char *beginDestination, int (*f)(int));
+char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int));
 
 int getWord(char *beginSearch, WordDescriptor *word);
 

@@ -177,6 +177,30 @@ string/tasks/digitToStart.c.s:
 	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStart.c.s
 .PHONY : string/tasks/digitToStart.c.s
 
+string/tasks/digitToStartNotReverse.obj: string/tasks/digitToStartNotReverse.c.obj
+.PHONY : string/tasks/digitToStartNotReverse.obj
+
+# target to build an object file
+string/tasks/digitToStartNotReverse.c.obj:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStartNotReverse.c.obj
+.PHONY : string/tasks/digitToStartNotReverse.c.obj
+
+string/tasks/digitToStartNotReverse.i: string/tasks/digitToStartNotReverse.c.i
+.PHONY : string/tasks/digitToStartNotReverse.i
+
+# target to preprocess a source file
+string/tasks/digitToStartNotReverse.c.i:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStartNotReverse.c.i
+.PHONY : string/tasks/digitToStartNotReverse.c.i
+
+string/tasks/digitToStartNotReverse.s: string/tasks/digitToStartNotReverse.c.s
+.PHONY : string/tasks/digitToStartNotReverse.s
+
+# target to generate assembly for a file
+string/tasks/digitToStartNotReverse.c.s:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStartNotReverse.c.s
+.PHONY : string/tasks/digitToStartNotReverse.c.s
+
 string/tasks/removeAdjacentEqualLetters.obj: string/tasks/removeAdjacentEqualLetters.c.obj
 .PHONY : string/tasks/removeAdjacentEqualLetters.obj
 
@@ -249,6 +273,30 @@ string/tasks/removeNonLetters.c.s:
 	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.s
 .PHONY : string/tasks/removeNonLetters.c.s
 
+string/tasks/test_task.obj: string/tasks/test_task.c.obj
+.PHONY : string/tasks/test_task.obj
+
+# target to build an object file
+string/tasks/test_task.c.obj:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/test_task.c.obj
+.PHONY : string/tasks/test_task.c.obj
+
+string/tasks/test_task.i: string/tasks/test_task.c.i
+.PHONY : string/tasks/test_task.i
+
+# target to preprocess a source file
+string/tasks/test_task.c.i:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/test_task.c.i
+.PHONY : string/tasks/test_task.c.i
+
+string/tasks/test_task.s: string/tasks/test_task.c.s
+.PHONY : string/tasks/test_task.s
+
+# target to generate assembly for a file
+string/tasks/test_task.c.s:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/test_task.c.s
+.PHONY : string/tasks/test_task.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -264,6 +312,9 @@ help:
 	@echo ... string/tasks/digitToStart.obj
 	@echo ... string/tasks/digitToStart.i
 	@echo ... string/tasks/digitToStart.s
+	@echo ... string/tasks/digitToStartNotReverse.obj
+	@echo ... string/tasks/digitToStartNotReverse.i
+	@echo ... string/tasks/digitToStartNotReverse.s
 	@echo ... string/tasks/removeAdjacentEqualLetters.obj
 	@echo ... string/tasks/removeAdjacentEqualLetters.i
 	@echo ... string/tasks/removeAdjacentEqualLetters.s
@@ -273,6 +324,9 @@ help:
 	@echo ... string/tasks/removeNonLetters.obj
 	@echo ... string/tasks/removeNonLetters.i
 	@echo ... string/tasks/removeNonLetters.s
+	@echo ... string/tasks/test_task.obj
+	@echo ... string/tasks/test_task.i
+	@echo ... string/tasks/test_task.s
 .PHONY : help
 
 
