@@ -3,6 +3,10 @@ project(new_projects C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(new_projects main.c)
+add_executable(new-projects main.c)
+
 add_subdirectory(libs)
-target_link_libraries(new-project data_structures)
+target_link_libraries(new-projects data_structures)
+
+
+

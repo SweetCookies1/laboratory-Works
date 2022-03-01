@@ -116,72 +116,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named new_projects
+# Target rules for targets named new-projects
 
 # Build rule for target.
-new_projects: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_projects
-.PHONY : new_projects
+new-projects: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new-projects
+.PHONY : new-projects
 
 # fast build rule for target.
-new_projects/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/build
-.PHONY : new_projects/fast
+new-projects/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/build
+.PHONY : new-projects/fast
 
-libs/algorithms/array_operations/array.obj: libs/algorithms/array_operations/array.c.obj
-.PHONY : libs/algorithms/array_operations/array.obj
+#=============================================================================
+# Target rules for targets named data_structures
 
-# target to build an object file
-libs/algorithms/array_operations/array.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.obj
-.PHONY : libs/algorithms/array_operations/array.c.obj
+# Build rule for target.
+data_structures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 data_structures
+.PHONY : data_structures
 
-libs/algorithms/array_operations/array.i: libs/algorithms/array_operations/array.c.i
-.PHONY : libs/algorithms/array_operations/array.i
-
-# target to preprocess a source file
-libs/algorithms/array_operations/array.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.i
-.PHONY : libs/algorithms/array_operations/array.c.i
-
-libs/algorithms/array_operations/array.s: libs/algorithms/array_operations/array.c.s
-.PHONY : libs/algorithms/array_operations/array.s
-
-# target to generate assembly for a file
-libs/algorithms/array_operations/array.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/libs/algorithms/array_operations/array.c.s
-.PHONY : libs/algorithms/array_operations/array.c.s
-
-libs/data_structures/string_/string_.obj: libs/data_structures/string_/string_.c.obj
-.PHONY : libs/data_structures/string_/string_.obj
-
-# target to build an object file
-libs/data_structures/string_/string_.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.obj
-.PHONY : libs/data_structures/string_/string_.c.obj
-
-libs/data_structures/string_/string_.i: libs/data_structures/string_/string_.c.i
-.PHONY : libs/data_structures/string_/string_.i
-
-# target to preprocess a source file
-libs/data_structures/string_/string_.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.i
-.PHONY : libs/data_structures/string_/string_.c.i
-
-libs/data_structures/string_/string_.s: libs/data_structures/string_/string_.c.s
-.PHONY : libs/data_structures/string_/string_.s
-
-# target to generate assembly for a file
-libs/data_structures/string_/string_.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/libs/data_structures/string_/string_.c.s
-.PHONY : libs/data_structures/string_/string_.c.s
+# fast build rule for target.
+data_structures/fast:
+	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
+.PHONY : data_structures/fast
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -189,7 +154,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -197,7 +162,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new_projects.dir\build.make CMakeFiles/new_projects.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -208,13 +173,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... new_projects
-	@echo ... libs/algorithms/array_operations/array.obj
-	@echo ... libs/algorithms/array_operations/array.i
-	@echo ... libs/algorithms/array_operations/array.s
-	@echo ... libs/data_structures/string_/string_.obj
-	@echo ... libs/data_structures/string_/string_.i
-	@echo ... libs/data_structures/string_/string_.s
+	@echo ... data_structures
+	@echo ... new-projects
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
