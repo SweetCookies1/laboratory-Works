@@ -1,12 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/data_structures.dir/string/string_.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/digitToStart.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/digitToStartNotReverse.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/removeExtraSpaces.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/reverseWord.c.obj"
-  "CMakeFiles/data_structures.dir/string/tasks/test_task.c.obj"
   "libdata_structures.a"
   "libdata_structures.pdb"
 )

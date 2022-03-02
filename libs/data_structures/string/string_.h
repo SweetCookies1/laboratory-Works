@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <memory.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 #define MAX_STRING_SIZE 100
 #define MAX_N_WORDS_IN_STRING 100
@@ -39,5 +40,11 @@ char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
 int getWord(char *beginSearch, WordDescriptor *word);
 
 char *getEndOfString(char *s);
+
+char *findComma(char *begin);
+
+int getWordSeparatedComma(char *beginSearch, WordDescriptor *word);
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 #endif

@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
   "../libs/CMakeLists.txt"
   "../libs/data_structures/CMakeLists.txt"
+  "../libs/data_structures/string/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -46,10 +47,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/data_structures/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/data_structures/string/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/new-projects.dir/DependInfo.cmake"
   "libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
+  "libs/data_structures/string/CMakeFiles/string.dir/DependInfo.cmake"
   )

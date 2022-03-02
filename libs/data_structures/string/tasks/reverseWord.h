@@ -3,4 +3,6 @@
 
 #include "../../string/string_.h"
 
+void reverseWord(WordDescriptor word);
+
 #endif //NEW_PROJECTS_REVERSEWORD_H

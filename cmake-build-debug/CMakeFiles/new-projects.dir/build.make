@@ -88,6 +88,7 @@ new__projects_EXTERNAL_OBJECTS =
 new-projects.exe: CMakeFiles/new-projects.dir/main.c.obj
 new-projects.exe: CMakeFiles/new-projects.dir/build.make
 new-projects.exe: libs/data_structures/libdata_structures.a
+new-projects.exe: libs/data_structures/string/libstring.a
 new-projects.exe: CMakeFiles/new-projects.dir/linklibs.rsp
 new-projects.exe: CMakeFiles/new-projects.dir/objects1.rsp
 new-projects.exe: CMakeFiles/new-projects.dir/link.txt

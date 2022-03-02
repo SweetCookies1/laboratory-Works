@@ -1,4 +1,5 @@
 #include "string_.h"
+#include <stdbool.h>
 
 size_t strlen_(const char *begin) {
     char *end = begin;
@@ -81,4 +82,35 @@ char *getEndOfString(char *s) {
    while (*s)
        s++;
     return s;
+}
+
+char *findComma(char *begin) {
+    while (*begin != '\0') {
+        if (*begin == ',')
+            return begin;
+
+        begin++;
+    }
+    return begin;
+}
+
+int getWordSeparatedComma(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findComma(word->begin);
+
+    return 1;
+}
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
+    word->begin = findNonSpaceReverse(rbegin, rend);
+    if (*word->begin == '\0')
+        return false;
+
+    word->end = findSpaceReverse(rbegin, rend);
+    word->begin++;
+    word->end++;
+    return true;
 }

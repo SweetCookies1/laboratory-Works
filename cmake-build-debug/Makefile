@@ -141,6 +141,19 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
+#=============================================================================
+# Target rules for targets named string
+
+# Build rule for target.
+string: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 string
+.PHONY : string
+
+# fast build rule for target.
+string/fast:
+	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/build
+.PHONY : string/fast
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -175,6 +188,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... data_structures
 	@echo ... new-projects
+	@echo ... string
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -3,4 +3,6 @@
 
 #include "../../string/string_.h"
 
+void digitToStart(WordDescriptor word);
+
 #endif //NEW_PROJECTS_DIGITTOSTARTNOTREVERSE_H

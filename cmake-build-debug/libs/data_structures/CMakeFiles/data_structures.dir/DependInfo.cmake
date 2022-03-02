@@ -9,13 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/string_.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/string_.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStart.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStart.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStartNotReverse.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/digitToStartNotReverse.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeExtraSpaces.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeExtraSpaces.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeNonLetters.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseWord.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/reverseWord.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/test_task.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/test_task.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

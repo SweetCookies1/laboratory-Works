@@ -95,29 +95,47 @@ libs/clean: libs/data_structures/clean
 
 # Recursive "all" directory target.
 libs/data_structures/all: libs/data_structures/CMakeFiles/data_structures.dir/all
+libs/data_structures/all: libs/data_structures/string/all
 .PHONY : libs/data_structures/all
 
 # Recursive "preinstall" directory target.
-libs/data_structures/preinstall:
+libs/data_structures/preinstall: libs/data_structures/string/preinstall
 .PHONY : libs/data_structures/preinstall
 
 # Recursive "clean" directory target.
 libs/data_structures/clean: libs/data_structures/CMakeFiles/data_structures.dir/clean
+libs/data_structures/clean: libs/data_structures/string/clean
 .PHONY : libs/data_structures/clean
+
+#=============================================================================
+# Directory level rules for directory libs/data_structures/string
+
+# Recursive "all" directory target.
+libs/data_structures/string/all: libs/data_structures/string/CMakeFiles/string.dir/all
+.PHONY : libs/data_structures/string/all
+
+# Recursive "preinstall" directory target.
+libs/data_structures/string/preinstall:
+.PHONY : libs/data_structures/string/preinstall
+
+# Recursive "clean" directory target.
+libs/data_structures/string/clean: libs/data_structures/string/CMakeFiles/string.dir/clean
+.PHONY : libs/data_structures/string/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/new-projects.dir
 
 # All Build rule for target.
 CMakeFiles/new-projects.dir/all: libs/data_structures/CMakeFiles/data_structures.dir/all
+CMakeFiles/new-projects.dir/all: libs/data_structures/string/CMakeFiles/string.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=10,11 "Built target new-projects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target new-projects"
 .PHONY : CMakeFiles/new-projects.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/new-projects.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/new-projects.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/new-projects.dir/rule
@@ -138,12 +156,12 @@ CMakeFiles/new-projects.dir/clean:
 libs/data_structures/CMakeFiles/data_structures.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target data_structures"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target data_structures"
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/all
 
 # Build rule for subdir invocation for target.
 libs/data_structures/CMakeFiles/data_structures.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/CMakeFiles/data_structures.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/rule
@@ -156,6 +174,32 @@ data_structures: libs/data_structures/CMakeFiles/data_structures.dir/rule
 libs/data_structures/CMakeFiles/data_structures.dir/clean:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/clean
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/clean
+
+#=============================================================================
+# Target rules for target libs/data_structures/string/CMakeFiles/string.dir
+
+# All Build rule for target.
+libs/data_structures/string/CMakeFiles/string.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Built target string"
+.PHONY : libs/data_structures/string/CMakeFiles/string.dir/all
+
+# Build rule for subdir invocation for target.
+libs/data_structures/string/CMakeFiles/string.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/string/CMakeFiles/string.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
+.PHONY : libs/data_structures/string/CMakeFiles/string.dir/rule
+
+# Convenience name for target.
+string: libs/data_structures/string/CMakeFiles/string.dir/rule
+.PHONY : string
+
+# clean rule for target.
+libs/data_structures/string/CMakeFiles/string.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/clean
+.PHONY : libs/data_structures/string/CMakeFiles/string.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
