@@ -5,14 +5,11 @@ void removeAdjacentEqualLetters(char *s) {
         return;
 
     char *lastWriten = s;
-    s++;
     while (*s) {
         if (*lastWriten != *s) {
-            lastWriten++;
-            memcpy(lastWriten, s, sizeof(char));
+            *(++lastWriten) = *s;
         }
         s++;
     }
-    lastWriten++;
-    *lastWriten = '\0';
+    *(++lastWriten) = '\0';
 }

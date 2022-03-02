@@ -273,6 +273,30 @@ string/tasks/removeNonLetters.c.s:
 	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.s
 .PHONY : string/tasks/removeNonLetters.c.s
 
+string/tasks/reverseWord.obj: string/tasks/reverseWord.c.obj
+.PHONY : string/tasks/reverseWord.obj
+
+# target to build an object file
+string/tasks/reverseWord.c.obj:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/reverseWord.c.obj
+.PHONY : string/tasks/reverseWord.c.obj
+
+string/tasks/reverseWord.i: string/tasks/reverseWord.c.i
+.PHONY : string/tasks/reverseWord.i
+
+# target to preprocess a source file
+string/tasks/reverseWord.c.i:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/reverseWord.c.i
+.PHONY : string/tasks/reverseWord.c.i
+
+string/tasks/reverseWord.s: string/tasks/reverseWord.c.s
+.PHONY : string/tasks/reverseWord.s
+
+# target to generate assembly for a file
+string/tasks/reverseWord.c.s:
+	cd /d C:\Users\user\CLionProjects\new-projects\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/reverseWord.c.s
+.PHONY : string/tasks/reverseWord.c.s
+
 string/tasks/test_task.obj: string/tasks/test_task.c.obj
 .PHONY : string/tasks/test_task.obj
 
@@ -324,6 +348,9 @@ help:
 	@echo ... string/tasks/removeNonLetters.obj
 	@echo ... string/tasks/removeNonLetters.i
 	@echo ... string/tasks/removeNonLetters.s
+	@echo ... string/tasks/reverseWord.obj
+	@echo ... string/tasks/reverseWord.i
+	@echo ... string/tasks/reverseWord.s
 	@echo ... string/tasks/test_task.obj
 	@echo ... string/tasks/test_task.i
 	@echo ... string/tasks/test_task.s

@@ -4,17 +4,16 @@
 void removeExtraSpaces(char *s) {
     if (*s == '\0')
         return;
+
     char *lastWriten = s;
     s++;
     while (*s) {
         if (isspace(*lastWriten) && isspace(*s)) {
             *lastWriten = ' ';
         } else {
-            lastWriten++;
-            memcpy(lastWriten, s, sizeof(char));
+            *++(lastWriten) = *s;
         }
         s++;
     }
-    lastWriten++;
-    *lastWriten = '\0';
+    *++(lastWriten) = '\0';
 }

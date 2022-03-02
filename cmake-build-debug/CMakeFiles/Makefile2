@@ -112,12 +112,12 @@ libs/data_structures/clean: libs/data_structures/CMakeFiles/data_structures.dir/
 CMakeFiles/new-projects.dir/all: libs/data_structures/CMakeFiles/data_structures.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target new-projects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=10,11 "Built target new-projects"
 .PHONY : CMakeFiles/new-projects.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/new-projects.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/new-projects.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/new-projects.dir/rule
@@ -138,12 +138,12 @@ CMakeFiles/new-projects.dir/clean:
 libs/data_structures/CMakeFiles/data_structures.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target data_structures"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target data_structures"
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/all
 
 # Build rule for subdir invocation for target.
 libs/data_structures/CMakeFiles/data_structures.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/CMakeFiles/data_structures.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/rule

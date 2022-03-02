@@ -78,5 +78,7 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 }
 
 char *getEndOfString(char *s) {
-    return s + strlen(s);
+   while (*s)
+       s++;
+    return s;
 }
