@@ -121,34 +121,32 @@ void test_digitToStart() {
     test_digitToStart2();
 }
 
-/*
-void test_reverseWord1() {
-    char str[] = "ffff";
 
-    reverseWord(str);
+void test_reverseWordsInString1() {
+    char str[] = " ";
 
-    char res[] = "ffff";
+    test_reverseWordsInString(str);
 
-    ASSERT_STRING(res, str);
-}
-
-void test_reverseWord2() {
-    char str[] = "allert";
-
-    reverseWord(str);
-
-    char res[] = "trella";
+    char res[] = " ";
 
     ASSERT_STRING(res, str);
 }
 
+void test_reverseWordsInString2() {
+    char str[] = "qwee12";
 
-void test_reverseWord() {
-    test_reverseWord1();
-    test_reverseWord2();
+    reverseWordsInString(str);
+
+    char res[] = "21eewq";
+
+    ASSERT_STRING(res, str);
+
 }
 
-*/
+void test_reverseWordsInString() {
+    test_reverseWordsInString1();
+    test_reverseWordsInString2();
+}
 /*
 void test_getCountPalindrom1() {
     char str[] = "aqqa";
@@ -170,7 +168,7 @@ void test_getCountPalindrom() {
     test_getCountPalindrom1();
     test_getCountPalindrom2();
 }
-*/
+
 
 void test_digitToStartNotReverse1() {
     char str[] = "ff13po1";
@@ -196,13 +194,13 @@ void test_digitToStartNotReverse() {
     test_digitToStartNotReverse1();
     test_digitToStartNotReverse2();
 }
-
+*/
 void test_string() {
     test_removeNonLetters();
     test_removeAdjacentEqualLetters();
     test_removeExtraSpaces();
     test_digitToStart();
-//  test_reverseWord();
+    test_reverseWordsInString();
 //  test_getCountPalindrom();
 //  test_digitToStartNotReverse();
 }

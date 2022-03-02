@@ -44,11 +44,11 @@ void test_getCountPalindrom2();
 
 void test_getCountPalindom();
 
-void test_reverseWord1();
+void test_reverseWordsInString1();
 
-void test_reverseWord2();
+void test_test_reverseWordsInString2();
 
-void test_reverseWord();
+void test_reverseWordsInString();
 
 void test_string();
 

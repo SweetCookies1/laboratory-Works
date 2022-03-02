@@ -5,6 +5,16 @@ int true1(int num) {
 }
 
 void reverseWord(WordDescriptor word) {
-    char *endBuffer = copyIfReverse(word.end - 1,word.begin - 1, _stringBuffer,true1);
-    copy(_stringBuffer, endBuffer, word.begin);
+    char *endStringBuffer = copy(word.begin, word.end, _stringBuffer);
+    copyIfReverse(endStringBuffer - 1, _stringBuffer, word.begin, true1);
+}
+
+void reverseWordsInString(char *s) {
+    char *beginSearch = findNonSpace(s);
+    WordDescriptor word;
+
+    while (getWord(beginSearch, &word)) {
+        reverseWord(word);
+        beginSearch = word.end;
+    }
 }

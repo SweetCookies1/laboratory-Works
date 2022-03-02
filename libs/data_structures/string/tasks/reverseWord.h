@@ -5,4 +5,6 @@
 
 void reverseWord(WordDescriptor word);
 
+void reverseWordsInString(char *s);
+
 #endif //NEW_PROJECTS_REVERSEWORD_H
