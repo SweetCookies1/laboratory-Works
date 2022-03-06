@@ -8,31 +8,31 @@ size_t strlen_(const char *begin) {
     return end - begin;
 }
 
-char* find(char *begin, char *end, int ch) {
+char *find(char *begin, char *end, int ch) {
     while (begin != end && *begin != ch)
         begin++;
     return begin;
 }
 
-char* findNonSpace(char *begin) {
+char *findNonSpace(char *begin) {
     while (*begin != '\0' && isspace(*begin))
         begin++;
     return begin;
 }
 
-char* findSpace(char *begin) {
+char *findSpace(char *begin) {
     while (*begin != '\0' && !isspace(*begin))
         begin++;
     return begin;
 }
 
-char* findNonSpaceReverse(char *rbegin, const char *rend) {
+char *findNonSpaceReverse(char *rbegin, const char *rend) {
     while (rbegin != rend && isspace(*rbegin))
         rbegin--;
     return rbegin;
 }
 
-char* findSpaceReverse(char *rbegin, const char *rend) {
+char *findSpaceReverse(char *rbegin, const char *rend) {
     while (rbegin != rend && !isspace(*rbegin))
         rbegin--;
     return rbegin;
@@ -46,21 +46,29 @@ int strcmp(const char *lhs, const char *rhs) {
     return *lhs - *rhs;
 }
 
-char* copy(const char *beginSource, const char *endSource, char *beginDestination) {
-    size_t dif = endSource - beginSource;
-    memcpy(beginDestination, beginSource, dif);
-    return beginDestination + dif;
-}
-
-char* copyIf(const char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
-    for (const char *begin = beginSource; begin < endSource; ++begin)
-        if (f(*begin))
-            *beginDestination++ = *begin;
-
+char *copy(const char *beginSource, const char *endSource, char *beginDestination) {
+    while (beginSource != endSource) {
+        memcpy(beginDestination, beginSource, sizeof(char));
+        beginSource++;
+        beginDestination++;
+    }
     return beginDestination;
 }
 
-char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
+char *copyIf(const char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
+    for (const char *begin = beginSource; begin < endSource; ++begin)
+        while(beginSource != endSource) {
+            if (f(*begin)) {
+                memcpy(beginDestination, beginSource, sizeof(char));
+                beginSource++;
+                beginDestination++;
+            } else
+                beginSource++;
+        }
+    return beginDestination;
+}
+
+char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
     for (char *begin = rbeginSource; begin > rendSource; --begin)
         if (f(*begin))
             *beginDestination++ = *begin;
@@ -79,8 +87,8 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 }
 
 char *getEndOfString(char *s) {
-   while (*s)
-       s++;
+    while (*s)
+        s++;
     return s;
 }
 

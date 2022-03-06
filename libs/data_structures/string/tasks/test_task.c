@@ -200,7 +200,7 @@ void test_string() {
     test_removeAdjacentEqualLetters();
     test_removeExtraSpaces();
     test_digitToStart();
-    test_reverseWordsInString();
+//  test_reverseWordsInString();
 //  test_getCountPalindrom();
 //  test_digitToStartNotReverse();
 }
