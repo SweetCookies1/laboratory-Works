@@ -1,7 +1,7 @@
 #ifndef COURSE_DIGITTOENDREVERS_H
 #define COURSE_DIGITTOENDREVERS_H
 
-#include "../string_.h"
+#include "../../string/string_.h"
 
 void digitToEnd(WordDescriptor word);
 

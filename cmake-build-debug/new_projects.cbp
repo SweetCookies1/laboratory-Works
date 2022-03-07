@@ -154,12 +154,6 @@
 			<Option target="data_structures"/>
 			<Option target="string"/>
 		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/DigitToEndReverse.c">
-			<Option target="string"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/DigitToEndReverse.h">
-			<Option target="string"/>
-		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStart.c">
 			<Option target="string"/>
 		</Unit>
@@ -170,6 +164,12 @@
 			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStartNotReverse.h">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitsToEndReverse.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitsToEndReverse.h">
 			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/getCountPalindom.c">
@@ -194,6 +194,12 @@
 			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeNonLetters.h">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/replaceDigitsWithSpaces.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/replaceDigitsWithSpaces.h">
 			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseWord.c">

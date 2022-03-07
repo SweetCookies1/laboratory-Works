@@ -1,4 +1,4 @@
-#include "digitToEndRevers.h"
+#include "digitsToEndReverse.h"
 
 void digitToEnd(WordDescriptor word) {
     char *endStringBuffer = copy(word.begin, word.end, _stringBuffer);

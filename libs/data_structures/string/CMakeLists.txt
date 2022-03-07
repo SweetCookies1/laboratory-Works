@@ -7,5 +7,4 @@ add_library(string
         tasks/reverseWord.c
         tasks/digitToStartNotReverse.c
         tasks/getCountPalindom.c
-        tasks/DigitToEndReverse.c
-        tasks/test_task.c)
+        tasks/test_task.c tasks/digitsToEndReverse.c tasks/digitsToEndReverse.h tasks/replaceDigitsWithSpaces.c tasks/replaceDigitsWithSpaces.h)
