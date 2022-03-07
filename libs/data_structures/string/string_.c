@@ -52,16 +52,14 @@ int strcmp(const char *lhs, const char *rhs) {
     return *lhs - *rhs;
 }
 
-char *copy(const char *beginSource, const char *endSource,
-           char *beginDestination) {
-    memcpy(beginDestination, beginSource,
-           sizeof(char) * (endSource - beginSource));
+char *copy(const char *beginSource, const char *endSource, char *beginDestination) {
+    int diff = endSource - beginSource;
+    memcpy(beginDestination, beginSource,sizeof(char) * diff);
 
-    return beginDestination + (endSource - beginSource);
+    return beginDestination + diff;
 }
 
-char *copyIf(char *beginSource, const char *endSource,
-             char *beginDestination, int (*f)(int)) {
+char *copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
     while (endSource > beginSource) {
         if (f(*beginSource))
             *(beginDestination++) = *beginSource;
@@ -71,11 +69,10 @@ char *copyIf(char *beginSource, const char *endSource,
     return beginDestination;
 }
 
-char *copyIfReverse(char *rbeginSource, const char *rendSource,
-                    char *beginDestination, int (*f)(int)) {
+char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
     while (rbeginSource > rendSource) {
         if (f(*rbeginSource))
-            *beginDestination++ = *rbeginSource;
+            *(beginDestination++) = *rbeginSource;
         rbeginSource--;
     }
     return beginDestination;
@@ -151,10 +148,6 @@ void getBagOfWords(BagOfWords *bag, char *s) {
     }
 }
 
-void wordDescriptorToString(WordDescriptor word, char* destination) {
-    destination = copy(word.begin, word.end, destination);
-    *destination = '\0';
-}
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     word->begin = findNonSpaceReverse(rbegin, rend);
     if (*word->begin == '\0')

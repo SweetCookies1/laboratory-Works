@@ -5,12 +5,12 @@ void reverseString(char *str) {
         return;
 
     char *endBuffer = copy(str, getEndOfString(str), _stringBuffer);
-    WordDescriptor w;
-    while (getWordRevers(endBuffer - 1, _stringBuffer - 1, &w)) {
-        str = copy(w.begin, w.end, str);
-        *str++ = ' ';
+    WordDescriptor word;
+    while (getWordRevers(endBuffer - 1, _stringBuffer - 1, &word)) {
+        str = copy(word.begin, word.end, str);
+        *(str++) = ' ';
 
-        endBuffer = w.begin;
+        endBuffer = word.begin;
     }
     *(str - 1) = '\0';
 }

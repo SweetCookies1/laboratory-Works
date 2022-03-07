@@ -9,4 +9,6 @@ add_library(string
         tasks/replaceDigitsWithSpaces.c
         tasks/replaceWord.c
         tasks/reverseString.c
-        tasks/test_task.c tasks/lexicographicOrderingWord.c tasks/lexicographicOrderingWord.h)
+        tasks/lexicographicOrderingWord.c
+        tasks/printWordReverse.c
+        tasks/test_task.c)
