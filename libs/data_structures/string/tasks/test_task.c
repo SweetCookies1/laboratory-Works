@@ -147,60 +147,10 @@ void test_reverseWordsInString() {
     test_reverseWordsInString1();
     test_reverseWordsInString2();
 }
-/*
-void test_getCountPalindrom1() {
-    char str[] = "aqqa";
 
-    int ans = getCountPalindom(str);
-
-    assert(ans == 1);
-}
-
-void test_getCountPalindrom2() {
-    char str[] = "gg543x, 333, jwrrwj, 0p]q";
-
-    int res = 2;
-
-    assert(res == getCountPalindom(str));
-}
-
-void test_getCountPalindrom() {
-    test_getCountPalindrom1();
-    test_getCountPalindrom2();
-}
-
-
-void test_digitToStartNotReverse1() {
-    char str[] = "ff13po1";
-
-    test_digitToStartNotReverse(str);
-
-    char res[] = "131ffpo";
-
-    ASSERT_STRING(str, res);
-}
-
-void test_digitToStartNotReverse2() {
-    char str[] = "gg13vp";
-
-    test_digitToStartNotReverse(str);
-
-    char res[] = "13ggvp";
-
-    ASSERT_STRING(str, res);
-}
-
-void test_digitToStartNotReverse() {
-    test_digitToStartNotReverse1();
-    test_digitToStartNotReverse2();
-}
-*/
 void test_string() {
     test_removeNonLetters();
     test_removeAdjacentEqualLetters();
     test_removeExtraSpaces();
     test_digitToStart();
-//  test_reverseWordsInString();
-//  test_getCountPalindrom();
-//  test_digitToStartNotReverse();
 }

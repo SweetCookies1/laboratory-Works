@@ -46,32 +46,31 @@ int strcmp(const char *lhs, const char *rhs) {
     return *lhs - *rhs;
 }
 
-char *copy(const char *beginSource, const char *endSource, char *beginDestination) {
-    while (beginSource != endSource) {
-        memcpy(beginDestination, beginSource, sizeof(char));
-        beginSource++;
-        beginDestination++;
-    }
-    return beginDestination;
+char *copy(const char *beginSource, const char *endSource,
+           char *beginDestination) {
+    memcpy(beginDestination, beginSource,
+           sizeof(char) * (endSource - beginSource));
+
+    return beginDestination + (endSource - beginSource);
 }
 
-char *copyIf(const char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
-    for (const char *begin = beginSource; begin < endSource; ++begin)
-        while(beginSource != endSource) {
-            if (f(*begin)) {
-                memcpy(beginDestination, beginSource, sizeof(char));
-                beginSource++;
-                beginDestination++;
-            } else
-                beginSource++;
-        }
+char *copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
+    while (endSource > beginSource) {
+        if (f(*beginSource))
+            *beginDestination++ = *beginSource;
+
+        beginSource++;
+    }
+
     return beginDestination;
 }
 
 char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
-    for (char *begin = rbeginSource; begin > rendSource; --begin)
-        if (f(*begin))
-            *beginDestination++ = *begin;
+    while (rbeginSource > rendSource) {
+        if (f(*rbeginSource))
+            *beginDestination++ = *rbeginSource;
+        rbeginSource--;
+    }
 
     return beginDestination;
 }

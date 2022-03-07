@@ -13,6 +13,8 @@
 #include "reverseWord.h"
 #include "getCountPalindom.h"
 #include "digitToStartNotReverse.h"
+#include "digitsToEndReverse.h"
+#include "reverseString.h"
 
 void test_removeNonLetters1();
 
@@ -32,23 +34,23 @@ void test_digitToStart2();
 
 void test_digitToStart();
 
-void test_digitToStartNotReverse1();
-
-void test_digitToStartNotReverse2();
-
-void test_digitToStartNotReverse();
-
-void test_getCountPalindrom1();
-
-void test_getCountPalindrom2();
-
-void test_getCountPalindom();
-
 void test_reverseWordsInString1();
 
-void test_test_reverseWordsInString2();
+void test_reverseWordsInString2();
 
 void test_reverseWordsInString();
+
+void test_digitsToEndReverse1();
+
+void test_digitsToEndReverse2();
+
+void test_digitsToEndReverse();
+
+void test_reverseString1();
+
+void test_reverseString2();
+
+void test_reverseString();
 
 void test_string();
 

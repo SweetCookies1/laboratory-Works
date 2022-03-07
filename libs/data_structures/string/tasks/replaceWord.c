@@ -27,7 +27,6 @@ void replace(char *source, char *w1, char *w2) {
             recPtr++;
             readPtr = word.end;
         }
-
         *recPtr = '\0';
     }
 }

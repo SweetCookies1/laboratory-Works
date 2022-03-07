@@ -208,6 +208,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/replaceWord.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseString.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseString.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseWord.c">
 			<Option target="string"/>
 		</Unit>
