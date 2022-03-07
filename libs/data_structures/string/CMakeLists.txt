@@ -4,10 +4,9 @@ add_library(string
         tasks/removeAdjacentEqualLetters.c
         tasks/removeExtraSpaces.c
         tasks/digitToStart.c
-        tasks/reverseWord.c
         tasks/getCountPalindom.c
         tasks/digitsToEndReverse.c
         tasks/replaceDigitsWithSpaces.c
         tasks/replaceWord.c
         tasks/reverseString.c
-        tasks/test_task.c )
+        tasks/test_task.c tasks/lexicographicOrderingWord.c tasks/lexicographicOrderingWord.h)

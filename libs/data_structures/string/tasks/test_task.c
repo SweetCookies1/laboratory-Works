@@ -216,6 +216,29 @@ void test_reverseString() {
     test_reverseString2();
 }
 
+void test_wordsOrdered1() {
+    char str[] = "bool code";
+    bool res = true;
+
+    assert(wordOrdered(str) == res);
+
+    printf("test_wordsOrdered1 - OK\n");
+}
+
+void test_wordsOrdered2() {
+    char str[] = "alert hits bunny";
+    bool res = true;
+
+    assert(!wordOrdered(str) == res);
+
+    printf("test_wordsOrdered2 - OK\n");
+}
+
+void test_wordsOrdered() {
+    test_wordsOrdered1();
+    test_wordsOrdered2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -225,5 +248,5 @@ void test_string() {
     test_removeExtraSpaces();
     test_removeNonLetters();
     test_reverseString();
-
+    test_wordsOrdered();
 }

@@ -15,6 +15,7 @@
 #include "removeNonLetters.h"
 #include "replaceDigitsWithSpaces.h"
 #include "reverseString.h"
+#include "lexicographicOrderingWord.h"
 
 void test_replaceDigitsWithSpaces1();
 
@@ -63,6 +64,12 @@ void test_reverseString1();
 void test_reverseString2();
 
 void test_reverseString();
+
+void test_wordsOrdered1();
+
+void test_wordsOrdered2();
+
+void test_wordsOrdered();
 
 void test_string();
 

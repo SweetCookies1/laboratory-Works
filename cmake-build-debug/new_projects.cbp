@@ -172,6 +172,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/getCountPalindom.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/lexicographicOrderingWord.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/lexicographicOrderingWord.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c">
 			<Option target="string"/>
 		</Unit>
@@ -206,12 +212,6 @@
 			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseString.h">
-			<Option target="string"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseWord.c">
-			<Option target="string"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseWord.h">
 			<Option target="string"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/test_task.c">
