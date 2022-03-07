@@ -1,7 +1,7 @@
 #include "replaceDigitsWithSpaces.h"
 
-void replaceNumberWithSpaces(char *str) {
-    char *endBuffer = copy(str, str + strlen(str), _stringBuffer);
+void replaceDigitsWithSpaces(char *str) {
+    char *endBuffer = copy(str, str + strlen_(str), _stringBuffer);
     char *beginBuffer = _stringBuffer;
     while (beginBuffer < endBuffer) {
         if (isdigit(*beginBuffer)) {
@@ -10,7 +10,7 @@ void replaceNumberWithSpaces(char *str) {
                 *str++ = ' ';
 
         } else
-            *str++ = *beginBuffer;
+            *(str++) = *beginBuffer;
         beginBuffer++;
     }
     *str = '\0';

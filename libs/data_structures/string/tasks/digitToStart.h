@@ -1,8 +1,8 @@
-#ifndef COURSE_DIGITTOSTART_H
-#define COURSE_DIGITTOSTART_H
+#ifndef NEW_PROJECTS_DIGITTOSTART_H
+#define NEW_PROJECTS_DIGITTOSTART_H
 
 #include "../../string/string_.h"
 
 void digitToStart(WordDescriptor word);
 
-#endif //COURSE_DIGITTOSTART_H
+#endif //NEW_PROJECTS_DIGITTOSTART_H

@@ -6,27 +6,21 @@
 #include "../../string/string_.h"
 #include "string.h"
 
-#include "removeNonLetters.h"
+#include "replaceDigitsWithSpaces.h"
+#include "digitToStart.h"
+#include "digitsToEndReverse.h"
+#include "getCountPalindom.h"
 #include "removeAdjacentEqualLetters.h"
 #include "removeExtraSpaces.h"
-#include "digitToStart.h"
-#include "reverseWord.h"
-#include "getCountPalindom.h"
-#include "digitToStartNotReverse.h"
-#include "digitsToEndReverse.h"
+#include "removeNonLetters.h"
+#include "replaceDigitsWithSpaces.h"
 #include "reverseString.h"
 
-void test_removeNonLetters1();
+void test_replaceDigitsWithSpaces1();
 
-void test_removeNonLetters2();
+void test_replaceDigitsWithSpaces2();
 
-void test_removeNonLetters();
-
-void test_removeAdjacentEqualLetters1();
-
-void test_removeAdjacentEqualLetters2();
-
-void test_removeAdjacentEqualLetters();
+void test_replaceDigitsWithSpaces();
 
 void test_digitToStart1();
 
@@ -34,17 +28,35 @@ void test_digitToStart2();
 
 void test_digitToStart();
 
-void test_reverseWordsInString1();
+void test_digitToEndReverse1();
 
-void test_reverseWordsInString2();
+void test_digitToEndReverse2();
 
-void test_reverseWordsInString();
+void test_digitToEndReverse();
 
-void test_digitsToEndReverse1();
+void test_getCountPalindrom1();
 
-void test_digitsToEndReverse2();
+void test_getCountPalindrom2();
 
-void test_digitsToEndReverse();
+void test_getCountPalindrom();
+
+void test_removeAdjacentEqualLetters1();
+
+void test_removeAdjacentEqualLetters2();
+
+void test_removeAdjacentEqualLetters();
+
+void test_removeExtraSpaces1();
+
+void test_removeExtraSpaces2();
+
+void test_removeExtraSpaces();
+
+void test_removeNonLetters1();
+
+void test_removeNonLetters2();
+
+void test_removeNonLetters();
 
 void test_reverseString1();
 

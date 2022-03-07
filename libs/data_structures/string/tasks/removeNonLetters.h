@@ -1,8 +1,8 @@
-#ifndef COURSE_REMOVENONLETTERS_H
-#define COURSE_REMOVENONLETTERS_H
+#ifndef NEW_PROJECTS_REMOVENONLETTERS_H
+#define NEW_PROJECTS_REMOVENONLETTERS_H
 
 #include "../../string/string_.h"
 
 void removeNonLetters(char *s);
 
-#endif //COURSE_REMOVENONLETTERS_H
+#endif //NEW_PROJECTS_REMOVENONLETTERS_H

@@ -7,7 +7,7 @@ void digitToEnd(WordDescriptor word) {
     copyIfReverse(endStringBuffer - 1, _stringBuffer - 1, recPosition, isdigit);
 }
 
-void digitToEndRevers(char *str) {
+void digitToEndReverse(char *str) {
     char *beginStr = str;
     WordDescriptor word;
 

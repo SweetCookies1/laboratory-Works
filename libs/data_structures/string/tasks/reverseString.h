@@ -1,8 +1,8 @@
-#ifndef COURSE_REVERSSTRING_H
-#define COURSE_REVERSSTRING_H
+#ifndef NEW_PROJECTS_REVERSESTRING_H
+#define NEW_PROJECTS_REVERSESTRING_H
 
 #include "../../string/string_.h"
 
 void reverseString(char *str);
 
-#endif //COURSE_REVERSSTRING_H
+#endif //NEW_PROJECTS_REVERSESTRING_H

@@ -1,5 +1,5 @@
-#ifndef COURSE_GETCOUNTPALINDROMWORDS_H
-#define COURSE_GETCOUNTPALINDROMWORDS_H
+#ifndef NEW_PROJECTS_GETCOUNTPALINDOM_H
+#define NEW_PROJECTS_GETCOUNTPALINDOM_H
 
 #include "../../string/string_.h"
 
@@ -7,4 +7,4 @@ int isPalindromeWord(WordDescriptor word);
 
 int getCountPalindom(char *str);
 
-#endif //COURSE_GETCOUNTPALINDROMWORDS_H
+#endif //NEW_PROJECTS_GETCOUNTPALINDOM_H

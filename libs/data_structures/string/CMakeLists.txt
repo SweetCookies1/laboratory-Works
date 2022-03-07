@@ -5,9 +5,9 @@ add_library(string
         tasks/removeExtraSpaces.c
         tasks/digitToStart.c
         tasks/reverseWord.c
-        tasks/digitToStartNotReverse.c
         tasks/getCountPalindom.c
         tasks/digitsToEndReverse.c
         tasks/replaceDigitsWithSpaces.c
         tasks/replaceWord.c
-        tasks/test_task.c tasks/reverseString.c tasks/reverseString.h)
+        tasks/reverseString.c
+        tasks/test_task.c )

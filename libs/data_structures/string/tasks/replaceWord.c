@@ -1,8 +1,8 @@
 #include "replaceWord.h"
 
 void replace(char *source, char *w1, char *w2) {
-    size_t w1Size = strlen(w1);
-    size_t w2Size = strlen(w2);
+    size_t w1Size = strlen_(w1);
+    size_t w2Size = strlen_(w2);
 
     WordDescriptor word1 = {w1, w1 + w1Size};
     WordDescriptor word2 = {w2, w2 + w2Size};

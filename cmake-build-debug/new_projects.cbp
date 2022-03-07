@@ -160,12 +160,6 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStart.h">
 			<Option target="string"/>
 		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStartNotReverse.c">
-			<Option target="string"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitToStartNotReverse.h">
-			<Option target="string"/>
-		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/digitsToEndReverse.c">
 			<Option target="string"/>
 		</Unit>

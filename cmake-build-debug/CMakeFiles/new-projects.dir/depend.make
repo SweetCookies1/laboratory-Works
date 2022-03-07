@@ -4,13 +4,12 @@
 CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/digitToStart.h \
- ../libs/data_structures/string/tasks/digitToStartNotReverse.h \
  ../libs/data_structures/string/tasks/digitsToEndReverse.h \
  ../libs/data_structures/string/tasks/getCountPalindom.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeExtraSpaces.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
+ ../libs/data_structures/string/tasks/replaceDigitsWithSpaces.h \
  ../libs/data_structures/string/tasks/reverseString.h \
- ../libs/data_structures/string/tasks/reverseWord.h \
  ../libs/data_structures/string/tasks/test_task.h \
  ../main.c

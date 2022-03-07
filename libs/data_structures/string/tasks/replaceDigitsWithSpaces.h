@@ -1,8 +1,8 @@
-#ifndef COURSE_REPLACENUMBERSWITHSPACES_H
-#define COURSE_REPLACENUMBERSWITHSPACES_H
+#ifndef NEW_PROJECTS_REPLACEDIGITSWITHSPACES_H
+#define NEW_PROJECTS_REPLACEDIGITSWITHSPACES_H
 
 #include "../../string/string_.h"
 
-void replaceNumberWithSpaces(char *str);
+void replaceDigitsWithSpaces(char *str);
 
-#endif //COURSE_REPLACENUMBERSWITHSPACES_H
+#endif //NEW_PROJECTS_REPLACEDIGITSWITHSPACES_H

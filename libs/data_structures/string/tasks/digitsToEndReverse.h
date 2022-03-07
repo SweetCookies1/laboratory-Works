@@ -1,10 +1,10 @@
-#ifndef COURSE_DIGITTOENDREVERS_H
-#define COURSE_DIGITTOENDREVERS_H
+#ifndef NEW_PROJECTS_DIGITTOENDREVERSE_H
+#define NEW_PROJECTS_DIGITTOENDREVERSE_H
 
 #include "../../string/string_.h"
 
 void digitToEnd(WordDescriptor word);
 
-void digitToEndRevers(char *str);
+void digitToEndReverse(char *str);
 
-#endif //COURSE_DIGITTOENDREVERS_H
+#endif //NEW_PROJECTS_DIGITTOENDREVERSE_H
