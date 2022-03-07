@@ -202,6 +202,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/replaceDigitsWithSpaces.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/replaceWord.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/replaceWord.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/reverseWord.c">
 			<Option target="string"/>
 		</Unit>
