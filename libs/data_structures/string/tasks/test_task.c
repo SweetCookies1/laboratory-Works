@@ -263,6 +263,26 @@ void test_wordsAreUnique() {
     test_wordsAreUnique2();
 }
 
+void testAll_wordBeforeFirstWordWithA() {
+    WordDescriptor word;
+    char s1[] = "";
+    assert (getWordBeforeFirstWordWithA(s1, &word)== EMPTY_STRING);
+
+    char s2[] = " ABC ";
+    assert (getWordBeforeFirstWordWithA(s2, &word) == FIRST_WORD_WITH_A);
+
+    char s3[] = "BC A";
+    assert (getWordBeforeFirstWordWithA(s3, &word) == WORD_FOUND);
+
+    char got[MAX_WORD_SIZE];
+    copy(word.begin, word.end, got);
+    got[word.end - word.begin] = '\0';
+    ASSERT_STRING ("BC", got);
+
+    char s4[] = "B Q WE YR OW IUWR ";
+    assert (getWordBeforeFirstWordWithA(s4, &word) == NOT_FOUND_A_WORD_WITH_A);
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -274,4 +294,6 @@ void test_string() {
     test_reverseString();
     test_wordsOrdered();
     test_wordsAreUnique();
+    testAll_wordBeforeFirstWordWithA();
+
 }

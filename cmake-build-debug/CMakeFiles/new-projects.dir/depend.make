@@ -13,5 +13,6 @@ CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/replaceDigitsWithSpaces.h \
  ../libs/data_structures/string/tasks/reverseString.h \
  ../libs/data_structures/string/tasks/test_task.h \
+ ../libs/data_structures/string/tasks/wordBeforeFirstWordWithA.h \
  ../libs/data_structures/string/tasks/wordsAreUnique.h \
  ../main.c

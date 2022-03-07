@@ -4,8 +4,6 @@
 #include "../../string/string_.h"
 #include "stdio.h"
 
-void printWord(WordDescriptor w);
-
-void printWordsRevers(char *str);
+void printWordsReverse(char *str);
 
 #endif //NEW_PROJECTS_PRINTWORDREVERSE_H

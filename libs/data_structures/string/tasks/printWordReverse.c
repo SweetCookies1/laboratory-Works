@@ -1,17 +1,17 @@
 #include "printWordReverse.h"
 
 void printWord(WordDescriptor word) {
-    char *endBuffer = copy(word.begin, word.end, _stringBuffer);
-    *endBuffer = '\0';
-    printf("%s", _stringBuffer);
+    char *endWord = word.end;
+    for (char *startWord = word.begin; startWord < endWord; ++startWord)
+        printf("%c", *startWord);
+    printf("\n");
 }
 
-void printWordsRevers(char *str) {
-    BagOfWords word;
-    getBagOfWords(&word, str);
+void printWordsInReverseOrder(char *s) {
+    getBagOfWords(&_bag, s);
 
-    for (int i = word.size - 1; i >= 0; --i) {
-        printWord(word.words[i]);
-        printf("\n");
-    }
+    WordDescriptor *endWord = _bag.words;
+    for (WordDescriptor *startWord = _bag.words + _bag.size - 1; startWord >= endWord; startWord--)
+        printWord(*startWord);
 }
+

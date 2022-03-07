@@ -17,6 +17,7 @@
 #include "reverseString.h"
 #include "lexicographicOrderingWord.h"
 #include "wordsAreUnique.h"
+#include "wordBeforeFirstWordWithA.h"
 
 void test_replaceDigitsWithSpaces1();
 
@@ -79,5 +80,7 @@ void test_wordsAreUnique2();
 void test_wordsAreUnique();
 
 void test_string();
+
+void testAll_wordBeforeFirstWordWithA();
 
 #endif //COURSE_TEST_TASKS_STRING_H

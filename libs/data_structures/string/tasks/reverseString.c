@@ -12,5 +12,5 @@ void reverseString(char *str) {
 
         endBuffer = word.begin;
     }
-    *(str - 1) = '\0';
+    *(--str) = '\0';
 }
