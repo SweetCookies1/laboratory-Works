@@ -16,6 +16,7 @@
 #include "replaceDigitsWithSpaces.h"
 #include "reverseString.h"
 #include "lexicographicOrderingWord.h"
+#include "wordsAreUnique.h"
 
 void test_replaceDigitsWithSpaces1();
 
@@ -70,6 +71,12 @@ void test_wordsOrdered1();
 void test_wordsOrdered2();
 
 void test_wordsOrdered();
+
+void test_wordsAreUnique1();
+
+void test_wordsAreUnique2();
+
+void test_wordsAreUnique();
 
 void test_string();
 

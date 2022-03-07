@@ -226,6 +226,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/test_task.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/wordsAreUnique.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/wordsAreUnique.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/main.c">
 			<Option target="new-projects"/>
 		</Unit>

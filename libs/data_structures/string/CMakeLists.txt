@@ -11,4 +11,4 @@ add_library(string
         tasks/reverseString.c
         tasks/lexicographicOrderingWord.c
         tasks/printWordReverse.c
-        tasks/test_task.c)
+        tasks/test_task.c tasks/wordsAreUnique.c tasks/wordsAreUnique.h)

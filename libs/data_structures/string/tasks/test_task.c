@@ -102,7 +102,7 @@ void test_getCountPalindrom1() {
 
     assert(res == getCountPalindom(str));
 
-    printf("test_getCountPalindromWords1 - OK\n");
+    printf("test_getCountPalindrom1 - OK\n");
 }
 
 void test_getCountPalindrom2() {
@@ -112,7 +112,7 @@ void test_getCountPalindrom2() {
 
     assert(res == getCountPalindom(str));
 
-    printf("test_getCountPalindromWords2 - OK\n");
+    printf("test_getCountPalindrom2 - OK\n");
 }
 
 void test_getCountPalindrom() {
@@ -239,6 +239,30 @@ void test_wordsOrdered() {
     test_wordsOrdered2();
 }
 
+void test_wordsAreUnique1() {
+    char str[] = "";
+    bool res = wordsAreUnique(str);
+
+    assert(res == true);
+
+    printf("test_wordsAreUnique1 - OK\n");
+}
+
+void test_wordsAreUnique2() {
+    char str[] = "reteb wql fie";
+
+    bool res = wordsAreUnique(str);
+
+    assert(res == true);
+
+    printf("test_wordsAreUnique2 - OK\n");
+}
+
+void test_wordsAreUnique() {
+    test_wordsAreUnique1();
+    test_wordsAreUnique2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -249,4 +273,5 @@ void test_string() {
     test_removeNonLetters();
     test_reverseString();
     test_wordsOrdered();
+    test_wordsAreUnique();
 }
