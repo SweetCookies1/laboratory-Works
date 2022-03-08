@@ -20,6 +20,5 @@ WordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, WordDesc
         startWord = curWord.end;
         prevWord = curWord;
     }
-
     return NOT_FOUND_A_WORD_WITH_A;
 }

@@ -16,4 +16,5 @@ CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/test_task.h \
  ../libs/data_structures/string/tasks/wordBeforeFirstWordWithA.h \
  ../libs/data_structures/string/tasks/wordsAreUnique.h \
+ ../libs/data_structures/string/tasks/wordsDifferenceLastWord.h \
  ../main.c

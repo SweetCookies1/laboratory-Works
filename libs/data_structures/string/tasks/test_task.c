@@ -314,6 +314,31 @@ void test_mixedStringFromTwo() {
     test_mixedStringFromTwo2();
 }
 
+void test_wordsDifferenceLastWord1() {
+    char str[] = "abc abc abc";
+
+    wordsDifferenceLastWord(str);
+
+    char res[] = "";
+
+    ASSERT_STRING(res, str);
+}
+
+void test_wordsDifferenceLastWord2() {
+    char str[] = "a b c a d a";
+
+    wordsDifferenceLastWord(str);
+
+    char res[] = "b c d";
+
+    ASSERT_STRING(str, res);
+}
+
+void test_wordsDifferenceLastWord() {
+    test_wordsDifferenceLastWord1();
+    test_wordsDifferenceLastWord2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -327,5 +352,5 @@ void test_string() {
     test_wordsAreUnique();
     testAll_wordBeforeFirstWordWithA();
     test_mixedStringFromTwo();
-
+    test_wordsDifferenceLastWord();
 }

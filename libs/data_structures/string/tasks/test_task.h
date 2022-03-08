@@ -19,6 +19,7 @@
 #include "wordsAreUnique.h"
 #include "wordBeforeFirstWordWithA.h"
 #include "mixedStringFromTwo.h"
+#include "wordsDifferenceLastWord.h"
 
 void test_replaceDigitsWithSpaces1();
 
@@ -89,5 +90,11 @@ void test_mixedStringFromTwo1();
 void test_mixedStringFromTwo2();
 
 void test_mixedStringFromTwo();
+
+void test_wordsDifferenceLastWord1();
+
+void test_wordsDifferenceLastWord2();
+
+void test_wordsDifferenceLastWord();
 
 #endif //COURSE_TEST_TASKS_STRING_H

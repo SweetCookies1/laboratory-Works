@@ -13,4 +13,6 @@ add_library(string
         tasks/printWordReverse.c
         tasks/wordsAreUnique.c
         tasks/wordBeforeFirstWordWithA.c
-        tasks/test_task.c tasks/lastWordFIrstStringInSecondString.c tasks/lastWordFIrstStringInSecondString.h tasks/mixedStringFromTwo.c tasks/mixedStringFromTwo.h)
+        tasks/lastWordFIrstStringInSecondString.c
+        tasks/mixedStringFromTwo.c
+        tasks/test_task.c tasks/wordsDifferenceLastWord.c tasks/wordsDifferenceLastWord.h)
