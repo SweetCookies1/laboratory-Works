@@ -283,6 +283,37 @@ void testAll_wordBeforeFirstWordWithA() {
     assert (getWordBeforeFirstWordWithA(s4, &word) == NOT_FOUND_A_WORD_WITH_A);
 }
 
+void test_mixedStringFromTwo1() {
+    char str1[] = "one three five";
+    char str2[] = "two four six";
+
+    char str3[MAX_STRING_SIZE];
+
+    mixedStringFromTwo(str1, str2, str3);
+
+    char res[] = "one two three four five six";
+
+    ASSERT_STRING(res, str3);
+}
+
+void test_mixedStringFromTwo2() {
+    char str1[] = "a b c d";
+    char str2[] = "i f";
+
+    char str3[MAX_STRING_SIZE];
+
+    mixedStringFromTwo(str1, str2, str3);
+
+    char res[] = "a i b f c d";
+
+    ASSERT_STRING(res, str3);
+}
+
+void test_mixedStringFromTwo() {
+    test_mixedStringFromTwo1();
+    test_mixedStringFromTwo2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -295,5 +326,6 @@ void test_string() {
     test_wordsOrdered();
     test_wordsAreUnique();
     testAll_wordBeforeFirstWordWithA();
+    test_mixedStringFromTwo();
 
 }

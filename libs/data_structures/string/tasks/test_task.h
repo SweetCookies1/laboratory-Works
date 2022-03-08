@@ -18,6 +18,7 @@
 #include "lexicographicOrderingWord.h"
 #include "wordsAreUnique.h"
 #include "wordBeforeFirstWordWithA.h"
+#include "mixedStringFromTwo.h"
 
 void test_replaceDigitsWithSpaces1();
 
@@ -82,5 +83,11 @@ void test_wordsAreUnique();
 void test_string();
 
 void testAll_wordBeforeFirstWordWithA();
+
+void test_mixedStringFromTwo1();
+
+void test_mixedStringFromTwo2();
+
+void test_mixedStringFromTwo();
 
 #endif //COURSE_TEST_TASKS_STRING_H

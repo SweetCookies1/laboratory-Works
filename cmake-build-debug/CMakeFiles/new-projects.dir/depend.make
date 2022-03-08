@@ -7,6 +7,7 @@ CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/digitsToEndReverse.h \
  ../libs/data_structures/string/tasks/getCountPalindom.h \
  ../libs/data_structures/string/tasks/lexicographicOrderingWord.h \
+ ../libs/data_structures/string/tasks/mixedStringFromTwo.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeExtraSpaces.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
