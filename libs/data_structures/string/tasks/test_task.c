@@ -14,6 +14,12 @@ void assertString(const char *expected, char *got,
     } else
         fprintf(stderr, "%s - OK\n", funcName);
 }
+
+void testingFunction(WordDescriptor word, char *str) {
+    str = copy(word.begin, word.end, str);
+    *str = '\0';
+}
+
 void test_replaceDigitsWithSpaces1() {
     char str[] = "4la";
 
@@ -339,34 +345,6 @@ void test_wordsDifferenceLastWord() {
     test_wordsDifferenceLastWord2();
 }
 
-/*
-void test_additionOfSmallerString1() {
-    char str1[] = "one two";
-    char str2[] = "five";
-
-    additionOfSmallerString(str1, str2);
-
-    char res[] = "five two";
-
-    ASSERT_STRING(res, str1);
-}
-
-void test_additionOfSmallerString2() {
-    char str1[] = "red cat";
-    char str2[] = "dog";
-
-    additionOfSmallerString(str1, str2);
-
-    char res[] = "dog cat";
-
-    ASSERT_STRING(res, str1);
-}
-
-void test_additionOfSmallerString() {
-    test_additionOfSmallerString1();
-    test_additionOfSmallerString2();
-}
-*/
 void test_deleteWordIsPalindrome1() {
     char str[] = "one qeq aka";
 
@@ -416,34 +394,37 @@ void test_pairWordsFromEqualLetter() {
     test_pairWordsFromEqualLetter1();
     test_pairWordsFromEqualLetter2();
 }
-/*
-void test_additionOfSmallerString1() {
-    char str1[] = "one two";
-    char str2[] = "five";
 
-    additionOfSmallerString(str1, str2);
+void test_lastWordInFirstStringInSecondString1() {
+    char str1[] = "lupa pupa cat time";
+    char str2[] = "ololo creep pupa";
 
-    char res[] = "five two";
+    WordDescriptor word;
+    lastWordInFirstStringInSecondString(str1, str2, &word);
 
-    ASSERT_STRING(res, str1);
+    char container[MAX_STRING_SIZE];
+    testingFunction(word, container);
+
+    char res[] = "pupa";
+
+    ASSERT_STRING(res, container);
 }
 
-void test_additionOfSmallerString2() {
-    char str1[] = "red cat";
-    char str2[] = "dog";
+void test_lastWordInFirstStringInSecondString2() {
+    char str1[] = "";
+    char str2[] = "ryan gosling";
 
-    additionOfSmallerString(str1, str2);
+    WordDescriptor word;
+    bool res = lastWordInFirstStringInSecondString(str1, str2, &word);
 
-    char res[] = "dog cat";
-
-    ASSERT_STRING(res, str1);
+    assert(res == false);
 }
 
-void test_additionOfSmallerString() {
-    test_additionOfSmallerString1();
-    test_additionOfSmallerString2();
+void test_lastWordInFirstStringInSecondString() {
+    test_lastWordInFirstStringInSecondString1();
+    test_lastWordInFirstStringInSecondString2();
 }
-*/
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -460,5 +441,5 @@ void test_string() {
     test_wordsDifferenceLastWord();
     test_pairWordsFromEqualLetter();
     test_deleteWordIsPalindrome();
-//    test_additionOfSmallerString();
+    test_lastWordInFirstStringInSecondString();
 }
