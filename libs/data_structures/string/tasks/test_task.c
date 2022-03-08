@@ -339,6 +339,7 @@ void test_wordsDifferenceLastWord() {
     test_wordsDifferenceLastWord2();
 }
 
+/*
 void test_additionOfSmallerString1() {
     char str1[] = "one two";
     char str2[] = "five";
@@ -365,30 +366,30 @@ void test_additionOfSmallerString() {
     test_additionOfSmallerString1();
     test_additionOfSmallerString2();
 }
+*/
+void test_deleteWordIsPalindrome1() {
+    char str[] = "one qeq aka";
 
-void test_deleteWordisEqualLast1() {
-    char str[] = "one two three two ";
+    deleteWordIsPalindrome(str);
 
-    deleteWordisEqualLast(str);
-
-    char res[] = "one three";
-
-    ASSERT_STRING(res, str);
-}
-
-void test_deleteWordisEqualLast2() {
-    char str[] = "red blue";
-
-    deleteWordisEqualLast(str);
-
-    char res[] = "red";
+    char res[] = "one";
 
     ASSERT_STRING(res, str);
 }
 
-void test_deleteWordisEqualLast() {
-    test_deleteWordisEqualLast1();
-    test_deleteWordisEqualLast2();
+void test_deleteWordIsPalindrome2() {
+    char str[] = "aaa bbb ca";
+
+    deleteWordIsPalindrome(str);
+
+    char res[] = "ca";
+
+    ASSERT_STRING(res, str);
+}
+
+void test_deleteWordIsPalindrome() {
+    test_deleteWordIsPalindrome1();
+    test_deleteWordIsPalindrome2();
 }
 
 void test_pairWordsFromEqualLetter1() {
@@ -415,7 +416,34 @@ void test_pairWordsFromEqualLetter() {
     test_pairWordsFromEqualLetter1();
     test_pairWordsFromEqualLetter2();
 }
+/*
+void test_additionOfSmallerString1() {
+    char str1[] = "one two";
+    char str2[] = "five";
 
+    additionOfSmallerString(str1, str2);
+
+    char res[] = "five two";
+
+    ASSERT_STRING(res, str1);
+}
+
+void test_additionOfSmallerString2() {
+    char str1[] = "red cat";
+    char str2[] = "dog";
+
+    additionOfSmallerString(str1, str2);
+
+    char res[] = "dog cat";
+
+    ASSERT_STRING(res, str1);
+}
+
+void test_additionOfSmallerString() {
+    test_additionOfSmallerString1();
+    test_additionOfSmallerString2();
+}
+*/
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -431,6 +459,6 @@ void test_string() {
     test_mixedStringFromTwo();
     test_wordsDifferenceLastWord();
     test_pairWordsFromEqualLetter();
-//    test_deleteWordisEqualLast();
+    test_deleteWordIsPalindrome();
 //    test_additionOfSmallerString();
 }

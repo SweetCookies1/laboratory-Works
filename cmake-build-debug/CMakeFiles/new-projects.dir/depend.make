@@ -3,8 +3,7 @@
 
 CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/string_.h \
- ../libs/data_structures/string/tasks/additionOfSmallerString.h \
- ../libs/data_structures/string/tasks/deleteWordisEqualLast.h \
+ ../libs/data_structures/string/tasks/deleteIsPalindromeWord.h \
  ../libs/data_structures/string/tasks/digitToStart.h \
  ../libs/data_structures/string/tasks/digitsToEndReverse.h \
  ../libs/data_structures/string/tasks/getCountPalindom.h \

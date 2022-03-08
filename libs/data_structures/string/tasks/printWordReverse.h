@@ -4,7 +4,7 @@
 #include "../../string/string_.h"
 #include "stdio.h"
 
-void printWordsReverse(char *str);
+void printWord(WordDescriptor word);
 
 void printWordsInReverseOrder(char *s);
 

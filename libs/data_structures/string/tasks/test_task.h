@@ -20,8 +20,7 @@
 #include "wordBeforeFirstWordWithA.h"
 #include "mixedStringFromTwo.h"
 #include "wordsDifferenceLastWord.h"
-#include "additionOfSmallerString.h"
-#include "deleteWordisEqualLast.h"
+#include "deleteIsPalindromeWord.h"
 #include "pairWordsFromEqualLetter.h"
 
 void test_replaceDigitsWithSpaces1();
@@ -100,17 +99,12 @@ void test_wordsDifferenceLastWord2();
 
 void test_wordsDifferenceLastWord();
 
-void test_additionOfSmallerString1();
+void test_deleteWordIsPalindrome1();
 
-void test_additionOfSmallerString2();
+void test_deleteWordIsPalindrome2();
 
-void test_additionOfSmallerString();
+void test_deleteWordIsPalindrome();
 
-void test_deleteWordisEqualLast1();
-
-void test_deleteWordisEqualLast2();
-
-void test_deleteWordisEqualLast();
 
 void test_pairWordsFromEqualLetter1();
 

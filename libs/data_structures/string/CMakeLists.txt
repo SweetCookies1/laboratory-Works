@@ -16,7 +16,6 @@ add_library(string
         tasks/lastWordFIrstStringInSecondString.c
         tasks/mixedStringFromTwo.c
         tasks/wordsDifferenceLastWord.c
-        tasks/additionOfSmallerString.c
-        tasks/deleteWordisEqualLast.c
         tasks/pairWordsFromEqualLetter.c
+        tasks/deleteIsPalindromeWord.c
         tasks/test_task.c)
