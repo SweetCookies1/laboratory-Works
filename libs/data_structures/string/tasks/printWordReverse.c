@@ -2,7 +2,7 @@
 
 void printWord(WordDescriptor word) {
     char *endWord = word.end;
-    for (char *startWord = word.begin; startWord < endWord; ++startWord)
+    for (char *startWord = word.begin; startWord < endWord; startWord++)
         printf("%c", *startWord);
     printf("\n");
 }

@@ -158,3 +158,16 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     word->end++;
     return true;
 }
+
+int findWordInBag(BagOfWords *bag, WordDescriptor word) {
+    WordDescriptor *curWord = bag->words;
+    WordDescriptor *endWord = bag->words + bag->size;
+
+    while (curWord < endWord) {
+        if (wordsEqual(*curWord, word))
+            return curWord - bag->words;
+
+        curWord++;
+    }
+    return -1;
+}

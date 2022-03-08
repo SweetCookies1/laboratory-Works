@@ -20,6 +20,9 @@
 #include "wordBeforeFirstWordWithA.h"
 #include "mixedStringFromTwo.h"
 #include "wordsDifferenceLastWord.h"
+#include "additionOfSmallerString.h"
+#include "deleteWordisEqualLast.h"
+#include "pairWordsFromEqualLetter.h"
 
 void test_replaceDigitsWithSpaces1();
 
@@ -75,11 +78,11 @@ void test_wordsOrdered2();
 
 void test_wordsOrdered();
 
-void test_wordsAreUnique1();
+void test_isEqualWordsInString1();
 
-void test_wordsAreUnique2();
+void test_isEqualWordsInString2();
 
-void test_wordsAreUnique();
+void test_isEqualWordsInString();
 
 void test_string();
 
@@ -96,5 +99,23 @@ void test_wordsDifferenceLastWord1();
 void test_wordsDifferenceLastWord2();
 
 void test_wordsDifferenceLastWord();
+
+void test_additionOfSmallerString1();
+
+void test_additionOfSmallerString2();
+
+void test_additionOfSmallerString();
+
+void test_deleteWordisEqualLast1();
+
+void test_deleteWordisEqualLast2();
+
+void test_deleteWordisEqualLast();
+
+void test_pairWordsFromEqualLetter1();
+
+void test_pairWordsFromEqualLetter2();
+
+void test_pairWordsFromEqualLetter();
 
 #endif //COURSE_TEST_TASKS_STRING_H

@@ -3,11 +3,14 @@
 
 CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/additionOfSmallerString.h \
+ ../libs/data_structures/string/tasks/deleteWordisEqualLast.h \
  ../libs/data_structures/string/tasks/digitToStart.h \
  ../libs/data_structures/string/tasks/digitsToEndReverse.h \
  ../libs/data_structures/string/tasks/getCountPalindom.h \
  ../libs/data_structures/string/tasks/lexicographicOrderingWord.h \
  ../libs/data_structures/string/tasks/mixedStringFromTwo.h \
+ ../libs/data_structures/string/tasks/pairWordsFromEqualLetter.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeExtraSpaces.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \

@@ -1,6 +1,6 @@
 #include "wordsAreUnique.h"
 
-bool wordsAreUnique(char *str) {
+bool isEqualWordsInString(char *str) {
     getBagOfWords(&_bag, str);
 
     WordDescriptor *curWord = _bag.words;
@@ -10,11 +10,11 @@ bool wordsAreUnique(char *str) {
         WordDescriptor *word = curWord + 1;
         while (word <= endWord) {
             if (wordsEqual(*curWord, *word))
-                return false;
+                return true;
 
             word++;
         }
         curWord++;
     }
-    return true;
+    return false;
 }

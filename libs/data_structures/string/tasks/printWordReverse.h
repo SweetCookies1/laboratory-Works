@@ -6,4 +6,6 @@
 
 void printWordsReverse(char *str);
 
+void printWordsInReverseOrder(char *s);
+
 #endif //NEW_PROJECTS_PRINTWORDREVERSE_H

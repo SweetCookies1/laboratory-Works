@@ -1,5 +1,5 @@
-#ifndef COURSE_STRING__H
-#define COURSE_STRING__H
+#ifndef NEW_PROJECT_STRING__H
+#define NEW_PROJECT_STRING__H
 
 #include <ctype.h>
 #include <memory.h>
@@ -68,5 +68,7 @@ void wordDescriptorDoString(WordDescriptor word, char* destination);
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 int wordsEqual(WordDescriptor w1, WordDescriptor w2);
+
+int findWordInBag(BagOfWords *bag, WordDescriptor word);
 
 #endif

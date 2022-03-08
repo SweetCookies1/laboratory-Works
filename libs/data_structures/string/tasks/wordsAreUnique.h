@@ -4,6 +4,6 @@
 #include "../../string/string_.h"
 #include "stdbool.h"
 
-bool wordsAreUnique(char *str);
+bool isEqualWordsInString(char *str);
 
 #endif //NEW_PROJECTS_WORDSAREUNIQUE_H

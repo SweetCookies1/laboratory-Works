@@ -239,28 +239,28 @@ void test_wordsOrdered() {
     test_wordsOrdered2();
 }
 
-void test_wordsAreUnique1() {
-    char str[] = "";
-    bool res = wordsAreUnique(str);
+void test_isEqualWordsInString1() {
+    char str[] = "ads bgr ads";
+    bool res = isEqualWordsInString(str);
 
     assert(res == true);
 
     printf("test_wordsAreUnique1 - OK\n");
 }
 
-void test_wordsAreUnique2() {
+void test_isEqualWordsInString2() {
     char str[] = "reteb wql fie";
 
-    bool res = wordsAreUnique(str);
+    bool res = isEqualWordsInString(str);
 
-    assert(res == true);
+    assert(res == false);
 
     printf("test_wordsAreUnique2 - OK\n");
 }
 
-void test_wordsAreUnique() {
-    test_wordsAreUnique1();
-    test_wordsAreUnique2();
+void test_isEqualWordsInString() {
+    test_isEqualWordsInString1();
+    test_isEqualWordsInString2();
 }
 
 void testAll_wordBeforeFirstWordWithA() {
@@ -339,6 +339,83 @@ void test_wordsDifferenceLastWord() {
     test_wordsDifferenceLastWord2();
 }
 
+void test_additionOfSmallerString1() {
+    char str1[] = "one two";
+    char str2[] = "five";
+
+    additionOfSmallerString(str1, str2);
+
+    char res[] = "five two";
+
+    ASSERT_STRING(res, str1);
+}
+
+void test_additionOfSmallerString2() {
+    char str1[] = "red cat";
+    char str2[] = "dog";
+
+    additionOfSmallerString(str1, str2);
+
+    char res[] = "dog cat";
+
+    ASSERT_STRING(res, str1);
+}
+
+void test_additionOfSmallerString() {
+    test_additionOfSmallerString1();
+    test_additionOfSmallerString2();
+}
+
+void test_deleteWordisEqualLast1() {
+    char str[] = "one two three two ";
+
+    deleteWordisEqualLast(str);
+
+    char res[] = "one three";
+
+    ASSERT_STRING(res, str);
+}
+
+void test_deleteWordisEqualLast2() {
+    char str[] = "red blue";
+
+    deleteWordisEqualLast(str);
+
+    char res[] = "red";
+
+    ASSERT_STRING(res, str);
+}
+
+void test_deleteWordisEqualLast() {
+    test_deleteWordisEqualLast1();
+    test_deleteWordisEqualLast2();
+}
+
+void test_pairWordsFromEqualLetter1() {
+    char str[] = "one two three";
+
+    bool res = false;
+
+    assert(res == pairWordsFromEqualLetter(str));
+
+    printf("pairWordsFromEqualLetter1 - OK\n");
+}
+
+void test_pairWordsFromEqualLetter2() {
+    char str[] = "red qwerty erd asd";
+
+    bool res = true;
+
+    assert(res == pairWordsFromEqualLetter(str));
+
+    printf("pairWordsFromEqualLetter1 - OK\n");
+}
+
+void test_pairWordsFromEqualLetter() {
+    test_pairWordsFromEqualLetter1();
+    test_pairWordsFromEqualLetter2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -349,8 +426,11 @@ void test_string() {
     test_removeNonLetters();
     test_reverseString();
     test_wordsOrdered();
-    test_wordsAreUnique();
+    test_isEqualWordsInString();
     testAll_wordBeforeFirstWordWithA();
     test_mixedStringFromTwo();
     test_wordsDifferenceLastWord();
+    test_pairWordsFromEqualLetter();
+//    test_deleteWordisEqualLast();
+//    test_additionOfSmallerString();
 }

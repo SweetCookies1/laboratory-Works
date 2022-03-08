@@ -15,4 +15,8 @@ add_library(string
         tasks/wordBeforeFirstWordWithA.c
         tasks/lastWordFIrstStringInSecondString.c
         tasks/mixedStringFromTwo.c
-        tasks/test_task.c tasks/wordsDifferenceLastWord.c tasks/wordsDifferenceLastWord.h)
+        tasks/wordsDifferenceLastWord.c
+        tasks/additionOfSmallerString.c
+        tasks/deleteWordisEqualLast.c
+        tasks/pairWordsFromEqualLetter.c
+        tasks/test_task.c)
