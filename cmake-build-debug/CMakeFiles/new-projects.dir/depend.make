@@ -11,6 +11,7 @@ CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/lexicographicOrderingWord.h \
  ../libs/data_structures/string/tasks/mixedStringFromTwo.h \
  ../libs/data_structures/string/tasks/pairWordsFromEqualLetter.h \
+ ../libs/data_structures/string/tasks/precindFirstOccurence.h \
  ../libs/data_structures/string/tasks/printWordReverse.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeExtraSpaces.h \

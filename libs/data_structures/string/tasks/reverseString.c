@@ -1,4 +1,4 @@
-#include "replaceWord.h"
+#include "reverseString.h"
 
 void reverseString(char *str) {
     if (*str == '\0')

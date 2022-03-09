@@ -450,6 +450,38 @@ void test_replace() {
     test_replace2();
 }
 
+void test_precedingFirstOccurrence1() {
+    char str1[] = "";
+    char str2[] = "qwerty uiui opo";
+
+    WordDescriptor w;
+
+    int res = precedingFirstOccurrence(str1, str2, &w);
+
+    assert(res == false);
+
+    printf("findWordPrecedingTheFirstOccurrence1 - OK\n");
+
+}
+
+void test_precedingFirstOccurrence2() {
+    char str1[] = "floppa big russian cat";
+    char str2[] = "not floppa";
+
+    WordDescriptor w;
+
+    int res = precedingFirstOccurrence(str1, str2, &w);
+
+    assert(res == true);
+
+    printf("findWordPrecedingTheFirstOccurrence2 - OK\n");
+}
+
+void test_precedingFirstOccurrence() {
+    test_precedingFirstOccurrence1();
+    test_precedingFirstOccurrence2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -468,4 +500,5 @@ void test_string() {
     test_deleteWordIsPalindrome();
     test_lastWordInFirstStringInSecondString();
     test_replace();
+    test_precedingFirstOccurrence();
 }

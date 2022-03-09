@@ -1,5 +1,5 @@
-#ifndef COURSE_TEST_TASKS_STRING_H
-#define COURSE_TEST_TASKS_STRING_H
+#ifndef NEW_PROJECT_TEST_TASKS_H
+#define NEW_PROJECT_TEST_TASKS_H
 
 #include "stdio.h"
 #include "assert.h"
@@ -24,6 +24,7 @@
 #include "pairWordsFromEqualLetter.h"
 #include "lastWordFIrstStringInSecondString.h"
 #include "replaceWord.h"
+#include "precindFirstOccurence.h"
 
 void testingFunction(WordDescriptor word, char *str);
 
@@ -127,4 +128,10 @@ void test_replace2();
 
 void test_replace();
 
-#endif //COURSE_TEST_TASKS_STRING_H
+void test_precedingFirstOccurrence1();
+
+void test_precedingFirstOccurrence2();
+
+void test_precedingFirstOccurrence();
+
+#endif

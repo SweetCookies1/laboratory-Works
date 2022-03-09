@@ -202,6 +202,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/pairWordsFromEqualLetter.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/precindFirstOccurence.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/precindFirstOccurence.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/string/tasks/printWordReverse.c">
 			<Option target="string"/>
 		</Unit>

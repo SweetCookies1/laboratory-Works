@@ -18,4 +18,4 @@ add_library(string
         tasks/wordsDifferenceLastWord.c
         tasks/pairWordsFromEqualLetter.c
         tasks/deleteIsPalindromeWord.c
-        tasks/test_task.c)
+        tasks/test_task.c tasks/precindFirstOccurence.c tasks/precindFirstOccurence.h)
