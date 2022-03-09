@@ -23,6 +23,7 @@
 #include "deleteIsPalindromeWord.h"
 #include "pairWordsFromEqualLetter.h"
 #include "lastWordFIrstStringInSecondString.h"
+#include "replaceWord.h"
 
 void testingFunction(WordDescriptor word, char *str);
 
@@ -119,5 +120,11 @@ void test_lastWordInFirstStringInSecondString1();
 void test_lastWordInFirstStringInSecondString2();
 
 void test_lastWordInFirstStringInSecondString();
+
+void test_replace1();
+
+void test_replace2();
+
+void test_replace();
 
 #endif //COURSE_TEST_TASKS_STRING_H

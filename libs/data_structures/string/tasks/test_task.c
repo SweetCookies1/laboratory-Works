@@ -425,6 +425,31 @@ void test_lastWordInFirstStringInSecondString() {
     test_lastWordInFirstStringInSecondString2();
 }
 
+void test_replace1() {
+    char str[MAX_STRING_SIZE] = "luck lupa pupa lupa";
+
+    replace(str, "lupa", "lol");
+
+    char assumedStr[] = "luck lol pupa lol";
+
+    ASSERT_STRING(assumedStr, str);
+}
+
+void test_replace2() {
+    char str[MAX_STRING_SIZE] = "";
+
+    replace(str, "lololo", "qu");
+
+    char assumedStr[] = "";
+
+    ASSERT_STRING(assumedStr, str);
+}
+
+void test_replace() {
+    test_replace1();
+    test_replace2();
+}
+
 void test_string() {
     test_replaceDigitsWithSpaces();
     test_digitToStart();
@@ -442,4 +467,5 @@ void test_string() {
     test_pairWordsFromEqualLetter();
     test_deleteWordIsPalindrome();
     test_lastWordInFirstStringInSecondString();
+    test_replace();
 }

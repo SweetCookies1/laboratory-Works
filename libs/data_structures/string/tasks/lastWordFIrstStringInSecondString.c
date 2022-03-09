@@ -13,6 +13,5 @@ bool lastWordInFirstStringInSecondString(char *str1, char *str2, WordDescriptor 
             }
         endStr1 = lastWord.begin;
         }
-
     return false;
 }

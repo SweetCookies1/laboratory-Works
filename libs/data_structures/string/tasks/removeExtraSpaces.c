@@ -1,19 +1,17 @@
-#include <memory.h>
 #include "removeExtraSpaces.h"
 
 void removeExtraSpaces(char *s) {
     if (*s == '\0')
         return;
 
-    char *lastWriten = s;
-    s++;
+    char *lastWriten = s++;
     while (*s) {
         if (isspace(*lastWriten) && isspace(*s)) {
             *lastWriten = ' ';
         } else {
-            *++(lastWriten) = *s;
+            *++lastWriten = *s;
         }
         s++;
     }
-    *(++lastWriten) = '\0';
+    *++lastWriten = '\0';
 }

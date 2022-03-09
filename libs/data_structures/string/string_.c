@@ -48,7 +48,6 @@ int strcmp(const char *lhs, const char *rhs) {
         lhs++;
         rhs++;
     }
-
     return *lhs - *rhs;
 }
 
@@ -72,7 +71,7 @@ char *copyIf(char *beginSource, const char *endSource, char *beginDestination, i
 char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
     while (rbeginSource > rendSource) {
         if (f(*rbeginSource))
-            *(beginDestination++) = *rbeginSource;
+            *beginDestination++ = *rbeginSource;
         rbeginSource--;
     }
     return beginDestination;
@@ -131,13 +130,6 @@ int getWordSeparatedComma(char *beginSearch, WordDescriptor *word) {
     return 1;
 }
 
-int wordsEqual(WordDescriptor w1, WordDescriptor w2) {
-    if (w1.end - w1.begin != w2.end - w2.begin)
-        return 0;
-
-    return !memcmp(w1.begin, w2.begin, w1.end - w1.begin);
-}
-
 void getBagOfWords(BagOfWords *bag, char *s) {
     bag->size = 0;
     WordDescriptor w;
@@ -170,4 +162,11 @@ int findWordInBag(BagOfWords *bag, WordDescriptor word) {
         curWord++;
     }
     return -1;
+}
+
+int wordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    if (w1.end - w1.begin != w2.end - w2.begin)
+        return 0;
+
+    return !memcmp(w1.begin, w2.begin, w1.end - w1.begin);
 }

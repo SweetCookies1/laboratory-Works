@@ -9,7 +9,7 @@ void replaceDigitsWithSpaces(char *str) {
             for (int i = 0; i < nSpaces; i++)
                 *str++ = ' ';
         } else
-            *(str++) = *beginBuffer;
+            *str++ = *beginBuffer;
         beginBuffer++;
     }
     *str = '\0';

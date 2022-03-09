@@ -21,11 +21,9 @@ int getCountPalindom(char *str) {
     if (*str == '\0')
         return 0;
 
-    char *lastWriten = str;
-
-    while (getWordSeparatedComma(lastWriten, &word)) {
+    while (getWordSeparatedComma(str, &word)) {
         count += (isPalindromeWord(word));
-        lastWriten = word.end + 1;
+        str = word.end + 1;
     }
     return count;
 }

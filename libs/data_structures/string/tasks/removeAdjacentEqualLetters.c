@@ -7,9 +7,9 @@ void removeAdjacentEqualLetters(char *s) {
     char *lastWriten = s;
     while (*s) {
         if (*lastWriten != *s) {
-            *(++lastWriten) = *s;
+            *++lastWriten = *s;
         }
         s++;
     }
-    *(++lastWriten) = '\0';
+    *++lastWriten = '\0';
 }

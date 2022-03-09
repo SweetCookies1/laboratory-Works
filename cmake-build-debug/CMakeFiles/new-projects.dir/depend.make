@@ -16,6 +16,7 @@ CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/removeExtraSpaces.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
  ../libs/data_structures/string/tasks/replaceDigitsWithSpaces.h \
+ ../libs/data_structures/string/tasks/replaceWord.h \
  ../libs/data_structures/string/tasks/reverseString.h \
  ../libs/data_structures/string/tasks/test_task.h \
  ../libs/data_structures/string/tasks/wordBeforeFirstWordWithA.h \

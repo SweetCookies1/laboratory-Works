@@ -71,4 +71,6 @@ int wordsEqual(WordDescriptor w1, WordDescriptor w2);
 
 int findWordInBag(BagOfWords *bag, WordDescriptor word);
 
+int wordcmp(WordDescriptor w1, WordDescriptor w2);
+
 #endif
