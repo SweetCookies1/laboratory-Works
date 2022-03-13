@@ -78,21 +78,82 @@ CMakeFiles/new-projects.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new-projects.dir/main.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\main.c -o CMakeFiles\new-projects.dir\main.c.s
 
+CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj: CMakeFiles/new-projects.dir/flags.make
+CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj: ../libs/algorithms/array/array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\new-projects.dir\libs\algorithms\array\array.c.obj -c C:\Users\user\CLionProjects\new-projects\libs\algorithms\array\array.c
+
+CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\user\CLionProjects\new-projects\libs\algorithms\array\array.c > CMakeFiles\new-projects.dir\libs\algorithms\array\array.c.i
+
+CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\libs\algorithms\array\array.c -o CMakeFiles\new-projects.dir\libs\algorithms\array\array.c.s
+
+CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj: CMakeFiles/new-projects.dir/flags.make
+CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj: ../libs/sorting_complexity/generators/generators.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\new-projects.dir\libs\sorting_complexity\generators\generators.c.obj -c C:\Users\user\CLionProjects\new-projects\libs\sorting_complexity\generators\generators.c
+
+CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\user\CLionProjects\new-projects\libs\sorting_complexity\generators\generators.c > CMakeFiles\new-projects.dir\libs\sorting_complexity\generators\generators.c.i
+
+CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\libs\sorting_complexity\generators\generators.c -o CMakeFiles\new-projects.dir\libs\sorting_complexity\generators\generators.c.s
+
+CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj: CMakeFiles/new-projects.dir/flags.make
+CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj: ../libs/sorting_complexity/sorting_complexity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\new-projects.dir\libs\sorting_complexity\sorting_complexity.c.obj -c C:\Users\user\CLionProjects\new-projects\libs\sorting_complexity\sorting_complexity.c
+
+CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\user\CLionProjects\new-projects\libs\sorting_complexity\sorting_complexity.c > CMakeFiles\new-projects.dir\libs\sorting_complexity\sorting_complexity.c.i
+
+CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\libs\sorting_complexity\sorting_complexity.c -o CMakeFiles\new-projects.dir\libs\sorting_complexity\sorting_complexity.c.s
+
+CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj: CMakeFiles/new-projects.dir/flags.make
+CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj: ../libs/algorithms/sorting/bubble_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\new-projects.dir\libs\algorithms\sorting\bubble_sort.c.obj -c C:\Users\user\CLionProjects\new-projects\libs\algorithms\sorting\bubble_sort.c
+
+CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\user\CLionProjects\new-projects\libs\algorithms\sorting\bubble_sort.c > CMakeFiles\new-projects.dir\libs\algorithms\sorting\bubble_sort.c.i
+
+CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\user\CLionProjects\new-projects\libs\algorithms\sorting\bubble_sort.c -o CMakeFiles\new-projects.dir\libs\algorithms\sorting\bubble_sort.c.s
+
 # Object files for target new-projects
 new__projects_OBJECTS = \
-"CMakeFiles/new-projects.dir/main.c.obj"
+"CMakeFiles/new-projects.dir/main.c.obj" \
+"CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj" \
+"CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj" \
+"CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj" \
+"CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj"
 
 # External object files for target new-projects
 new__projects_EXTERNAL_OBJECTS =
 
 new-projects.exe: CMakeFiles/new-projects.dir/main.c.obj
+new-projects.exe: CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj
+new-projects.exe: CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj
+new-projects.exe: CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj
+new-projects.exe: CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj
 new-projects.exe: CMakeFiles/new-projects.dir/build.make
-new-projects.exe: libs/data_structures/libdata_structures.a
-new-projects.exe: libs/data_structures/string/libstring.a
+new-projects.exe: libs/algorithms/libalgorithms.a
+new-projects.exe: libs/algorithms/libalgorithms.a
+new-projects.exe: libs/sorting_complexity/libsorting_complexity.a
 new-projects.exe: CMakeFiles/new-projects.dir/linklibs.rsp
 new-projects.exe: CMakeFiles/new-projects.dir/objects1.rsp
 new-projects.exe: CMakeFiles/new-projects.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable new-projects.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable new-projects.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\new-projects.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

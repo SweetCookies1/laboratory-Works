@@ -79,63 +79,82 @@ clean: libs/clean
 # Directory level rules for directory libs
 
 # Recursive "all" directory target.
+libs/all: libs/algorithms/all
 libs/all: libs/data_structures/all
+libs/all: libs/sorting_complexity/all
 .PHONY : libs/all
 
 # Recursive "preinstall" directory target.
+libs/preinstall: libs/algorithms/preinstall
 libs/preinstall: libs/data_structures/preinstall
+libs/preinstall: libs/sorting_complexity/preinstall
 .PHONY : libs/preinstall
 
 # Recursive "clean" directory target.
+libs/clean: libs/algorithms/clean
 libs/clean: libs/data_structures/clean
+libs/clean: libs/sorting_complexity/clean
 .PHONY : libs/clean
+
+#=============================================================================
+# Directory level rules for directory libs/algorithms
+
+# Recursive "all" directory target.
+libs/algorithms/all: libs/algorithms/CMakeFiles/algorithms.dir/all
+.PHONY : libs/algorithms/all
+
+# Recursive "preinstall" directory target.
+libs/algorithms/preinstall:
+.PHONY : libs/algorithms/preinstall
+
+# Recursive "clean" directory target.
+libs/algorithms/clean: libs/algorithms/CMakeFiles/algorithms.dir/clean
+.PHONY : libs/algorithms/clean
 
 #=============================================================================
 # Directory level rules for directory libs/data_structures
 
 # Recursive "all" directory target.
-libs/data_structures/all: libs/data_structures/CMakeFiles/data_structures.dir/all
-libs/data_structures/all: libs/data_structures/string/all
+libs/data_structures/all:
 .PHONY : libs/data_structures/all
 
 # Recursive "preinstall" directory target.
-libs/data_structures/preinstall: libs/data_structures/string/preinstall
+libs/data_structures/preinstall:
 .PHONY : libs/data_structures/preinstall
 
 # Recursive "clean" directory target.
-libs/data_structures/clean: libs/data_structures/CMakeFiles/data_structures.dir/clean
-libs/data_structures/clean: libs/data_structures/string/clean
+libs/data_structures/clean:
 .PHONY : libs/data_structures/clean
 
 #=============================================================================
-# Directory level rules for directory libs/data_structures/string
+# Directory level rules for directory libs/sorting_complexity
 
 # Recursive "all" directory target.
-libs/data_structures/string/all: libs/data_structures/string/CMakeFiles/string.dir/all
-.PHONY : libs/data_structures/string/all
+libs/sorting_complexity/all: libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/all
+.PHONY : libs/sorting_complexity/all
 
 # Recursive "preinstall" directory target.
-libs/data_structures/string/preinstall:
-.PHONY : libs/data_structures/string/preinstall
+libs/sorting_complexity/preinstall:
+.PHONY : libs/sorting_complexity/preinstall
 
 # Recursive "clean" directory target.
-libs/data_structures/string/clean: libs/data_structures/string/CMakeFiles/string.dir/clean
-.PHONY : libs/data_structures/string/clean
+libs/sorting_complexity/clean: libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/clean
+.PHONY : libs/sorting_complexity/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/new-projects.dir
 
 # All Build rule for target.
-CMakeFiles/new-projects.dir/all: libs/data_structures/CMakeFiles/data_structures.dir/all
-CMakeFiles/new-projects.dir/all: libs/data_structures/string/CMakeFiles/string.dir/all
+CMakeFiles/new-projects.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
+CMakeFiles/new-projects.dir/all: libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target new-projects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9 "Built target new-projects"
 .PHONY : CMakeFiles/new-projects.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/new-projects.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/new-projects.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/new-projects.dir/rule
@@ -150,56 +169,56 @@ CMakeFiles/new-projects.dir/clean:
 .PHONY : CMakeFiles/new-projects.dir/clean
 
 #=============================================================================
-# Target rules for target libs/data_structures/CMakeFiles/data_structures.dir
+# Target rules for target libs/algorithms/CMakeFiles/algorithms.dir
 
 # All Build rule for target.
-libs/data_structures/CMakeFiles/data_structures.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target data_structures"
-.PHONY : libs/data_structures/CMakeFiles/data_structures.dir/all
+libs/algorithms/CMakeFiles/algorithms.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target algorithms"
+.PHONY : libs/algorithms/CMakeFiles/algorithms.dir/all
 
 # Build rule for subdir invocation for target.
-libs/data_structures/CMakeFiles/data_structures.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/CMakeFiles/data_structures.dir/all
+libs/algorithms/CMakeFiles/algorithms.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/algorithms/CMakeFiles/algorithms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
-.PHONY : libs/data_structures/CMakeFiles/data_structures.dir/rule
+.PHONY : libs/algorithms/CMakeFiles/algorithms.dir/rule
 
 # Convenience name for target.
-data_structures: libs/data_structures/CMakeFiles/data_structures.dir/rule
-.PHONY : data_structures
+algorithms: libs/algorithms/CMakeFiles/algorithms.dir/rule
+.PHONY : algorithms
 
 # clean rule for target.
-libs/data_structures/CMakeFiles/data_structures.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/clean
-.PHONY : libs/data_structures/CMakeFiles/data_structures.dir/clean
+libs/algorithms/CMakeFiles/algorithms.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/clean
+.PHONY : libs/algorithms/CMakeFiles/algorithms.dir/clean
 
 #=============================================================================
-# Target rules for target libs/data_structures/string/CMakeFiles/string.dir
+# Target rules for target libs/sorting_complexity/CMakeFiles/sorting_complexity.dir
 
 # All Build rule for target.
-libs/data_structures/string/CMakeFiles/string.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target string"
-.PHONY : libs/data_structures/string/CMakeFiles/string.dir/all
+libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs\sorting_complexity\CMakeFiles\sorting_complexity.dir\build.make libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs\sorting_complexity\CMakeFiles\sorting_complexity.dir\build.make libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles --progress-num=10,11,12 "Built target sorting_complexity"
+.PHONY : libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/all
 
 # Build rule for subdir invocation for target.
-libs/data_structures/string/CMakeFiles/string.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/data_structures/string/CMakeFiles/string.dir/all
+libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\CLionProjects\new-projects\cmake-build-debug\CMakeFiles 0
-.PHONY : libs/data_structures/string/CMakeFiles/string.dir/rule
+.PHONY : libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/rule
 
 # Convenience name for target.
-string: libs/data_structures/string/CMakeFiles/string.dir/rule
-.PHONY : string
+sorting_complexity: libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/rule
+.PHONY : sorting_complexity
 
 # clean rule for target.
-libs/data_structures/string/CMakeFiles/string.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/clean
-.PHONY : libs/data_structures/string/CMakeFiles/string.dir/clean
+libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs\sorting_complexity\CMakeFiles\sorting_complexity.dir\build.make libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/clean
+.PHONY : libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

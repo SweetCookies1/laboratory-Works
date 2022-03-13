@@ -129,30 +129,126 @@ new-projects/fast:
 .PHONY : new-projects/fast
 
 #=============================================================================
-# Target rules for targets named data_structures
+# Target rules for targets named algorithms
 
 # Build rule for target.
-data_structures: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 data_structures
-.PHONY : data_structures
+algorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 algorithms
+.PHONY : algorithms
 
 # fast build rule for target.
-data_structures/fast:
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
-.PHONY : data_structures/fast
+algorithms/fast:
+	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/build
+.PHONY : algorithms/fast
 
 #=============================================================================
-# Target rules for targets named string
+# Target rules for targets named sorting_complexity
 
 # Build rule for target.
-string: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 string
-.PHONY : string
+sorting_complexity: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sorting_complexity
+.PHONY : sorting_complexity
 
 # fast build rule for target.
-string/fast:
-	$(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/build
-.PHONY : string/fast
+sorting_complexity/fast:
+	$(MAKE) $(MAKESILENT) -f libs\sorting_complexity\CMakeFiles\sorting_complexity.dir\build.make libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/build
+.PHONY : sorting_complexity/fast
+
+libs/algorithms/array/array.obj: libs/algorithms/array/array.c.obj
+.PHONY : libs/algorithms/array/array.obj
+
+# target to build an object file
+libs/algorithms/array/array.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj
+.PHONY : libs/algorithms/array/array.c.obj
+
+libs/algorithms/array/array.i: libs/algorithms/array/array.c.i
+.PHONY : libs/algorithms/array/array.i
+
+# target to preprocess a source file
+libs/algorithms/array/array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.i
+.PHONY : libs/algorithms/array/array.c.i
+
+libs/algorithms/array/array.s: libs/algorithms/array/array.c.s
+.PHONY : libs/algorithms/array/array.s
+
+# target to generate assembly for a file
+libs/algorithms/array/array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.s
+.PHONY : libs/algorithms/array/array.c.s
+
+libs/algorithms/sorting/bubble_sort.obj: libs/algorithms/sorting/bubble_sort.c.obj
+.PHONY : libs/algorithms/sorting/bubble_sort.obj
+
+# target to build an object file
+libs/algorithms/sorting/bubble_sort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj
+.PHONY : libs/algorithms/sorting/bubble_sort.c.obj
+
+libs/algorithms/sorting/bubble_sort.i: libs/algorithms/sorting/bubble_sort.c.i
+.PHONY : libs/algorithms/sorting/bubble_sort.i
+
+# target to preprocess a source file
+libs/algorithms/sorting/bubble_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.i
+.PHONY : libs/algorithms/sorting/bubble_sort.c.i
+
+libs/algorithms/sorting/bubble_sort.s: libs/algorithms/sorting/bubble_sort.c.s
+.PHONY : libs/algorithms/sorting/bubble_sort.s
+
+# target to generate assembly for a file
+libs/algorithms/sorting/bubble_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.s
+.PHONY : libs/algorithms/sorting/bubble_sort.c.s
+
+libs/sorting_complexity/generators/generators.obj: libs/sorting_complexity/generators/generators.c.obj
+.PHONY : libs/sorting_complexity/generators/generators.obj
+
+# target to build an object file
+libs/sorting_complexity/generators/generators.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj
+.PHONY : libs/sorting_complexity/generators/generators.c.obj
+
+libs/sorting_complexity/generators/generators.i: libs/sorting_complexity/generators/generators.c.i
+.PHONY : libs/sorting_complexity/generators/generators.i
+
+# target to preprocess a source file
+libs/sorting_complexity/generators/generators.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.i
+.PHONY : libs/sorting_complexity/generators/generators.c.i
+
+libs/sorting_complexity/generators/generators.s: libs/sorting_complexity/generators/generators.c.s
+.PHONY : libs/sorting_complexity/generators/generators.s
+
+# target to generate assembly for a file
+libs/sorting_complexity/generators/generators.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.s
+.PHONY : libs/sorting_complexity/generators/generators.c.s
+
+libs/sorting_complexity/sorting_complexity.obj: libs/sorting_complexity/sorting_complexity.c.obj
+.PHONY : libs/sorting_complexity/sorting_complexity.obj
+
+# target to build an object file
+libs/sorting_complexity/sorting_complexity.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj
+.PHONY : libs/sorting_complexity/sorting_complexity.c.obj
+
+libs/sorting_complexity/sorting_complexity.i: libs/sorting_complexity/sorting_complexity.c.i
+.PHONY : libs/sorting_complexity/sorting_complexity.i
+
+# target to preprocess a source file
+libs/sorting_complexity/sorting_complexity.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.i
+.PHONY : libs/sorting_complexity/sorting_complexity.c.i
+
+libs/sorting_complexity/sorting_complexity.s: libs/sorting_complexity/sorting_complexity.c.s
+.PHONY : libs/sorting_complexity/sorting_complexity.s
+
+# target to generate assembly for a file
+libs/sorting_complexity/sorting_complexity.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.s
+.PHONY : libs/sorting_complexity/sorting_complexity.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -186,9 +282,21 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... data_structures
+	@echo ... algorithms
 	@echo ... new-projects
-	@echo ... string
+	@echo ... sorting_complexity
+	@echo ... libs/algorithms/array/array.obj
+	@echo ... libs/algorithms/array/array.i
+	@echo ... libs/algorithms/array/array.s
+	@echo ... libs/algorithms/sorting/bubble_sort.obj
+	@echo ... libs/algorithms/sorting/bubble_sort.i
+	@echo ... libs/algorithms/sorting/bubble_sort.s
+	@echo ... libs/sorting_complexity/generators/generators.obj
+	@echo ... libs/sorting_complexity/generators/generators.i
+	@echo ... libs/sorting_complexity/generators/generators.s
+	@echo ... libs/sorting_complexity/sorting_complexity.obj
+	@echo ... libs/sorting_complexity/sorting_complexity.i
+	@echo ... libs/sorting_complexity/sorting_complexity.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

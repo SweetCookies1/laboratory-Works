@@ -8,6 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/user/CLionProjects/new-projects/libs/algorithms/array/array.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj"
+  "C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/bubble_sort.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj"
+  "C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/generators/generators.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj"
+  "C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/sorting_complexity.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj"
   "C:/Users/user/CLionProjects/new-projects/main.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -22,8 +26,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
-  "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/DependInfo.cmake"
+  "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
+  "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/sorting_complexity/CMakeFiles/sorting_complexity.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

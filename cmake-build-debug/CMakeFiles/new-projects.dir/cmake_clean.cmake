@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj"
+  "CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj"
+  "CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj"
+  "CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj"
   "CMakeFiles/new-projects.dir/main.c.obj"
   "libnew-projects.dll.a"
   "new-projects.exe"

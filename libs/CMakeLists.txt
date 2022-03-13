@@ -1,1 +1,3 @@
+add_subdirectory(algorithms)
 add_subdirectory(data_structures)
+add_subdirectory(sorting_complexity)
