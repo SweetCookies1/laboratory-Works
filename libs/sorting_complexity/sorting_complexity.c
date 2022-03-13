@@ -14,8 +14,8 @@
 }
 
 void checkTime(void (*sort)(int *, size_t),
-               void (*generate)(int *, size_t),
-               size_t size, char *experimentName) {
+               void (*generate)(int *, size_t), size_t size,
+               char *experimentName) {
     static size_t runCounter = 1;
 
     static int innerBuffer[100000];
@@ -31,7 +31,7 @@ void checkTime(void (*sort)(int *, size_t),
     printf("Status: ");
     if (isNonDescendingSorted(innerBuffer, size)) {
         printf("OK! Time: %.3f s.\n", time);
-
+//запсиь в файл
         char filename[256];
         sprintf(filename, "./data/%s.csv", experimentName);
         FILE *f = fopen(filename, "a");
@@ -49,7 +49,13 @@ void checkTime(void (*sort)(int *, size_t),
 }
 
 void timeExperiment() {
-    sortFunc sortFuncs[] = {};
+    sortFunc sortFuncs[] = {
+            {bubbleSort, "bubbleSort"},
+            {selectionSort, "selectionSort"},
+            {combsort, "combsort"},
+            {insertionSort, "insertionSort"},
+            {shellSort, "shellSort"}
+    };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sortFuncs);
 
@@ -66,9 +72,13 @@ void timeExperiment() {
         printf("size: %zu\n", size);
         for (size_t i = 0; i < FUNCS_N; i++) {
             for (size_t j = 0; j < CASES_N; j++) {
+
                 static char filename[128];
-                sprintf(filename, "%s_%s_time", sortFuncs[i].name, generateFuncs[j].name);
-                checkTime(sortFuncs[i].sort, generateFuncs[j].generate, size, filename);
+                sprintf(filename, "%s_%s_time",
+                        sortFuncs[i].name, generateFuncs[j].name);
+                checkTime(sortFuncs[i].sort,
+                          generateFuncs[j].generate,
+                          size, filename);
             }
         }
         printf("\n");

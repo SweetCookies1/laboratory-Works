@@ -44,11 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/data_structures/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("C:/Users/user/CLionProjects/new-projects/cmake-build-debug/libs/sorting_complexity/cmake_install.cmake")
 endif()
 

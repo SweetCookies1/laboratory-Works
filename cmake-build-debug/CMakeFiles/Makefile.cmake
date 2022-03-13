@@ -33,7 +33,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
   "../libs/CMakeLists.txt"
   "../libs/algorithms/CMakeLists.txt"
-  "../libs/data_structures/CMakeLists.txt"
   "../libs/sorting_complexity/CMakeLists.txt"
   )
 
@@ -48,7 +47,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libs/data_structures/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/sorting_complexity/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -5,7 +5,7 @@
 		<Option title="new_projects"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\algorithms\;CMake Files\libs\data_structures\;CMake Files\libs\sorting_complexity\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\algorithms\;CMake Files\libs\sorting_complexity\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/user/CLionProjects/new-projects/cmake-build-debug"/>
@@ -160,6 +160,30 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/bubble_sort.h">
 			<Option target="new-projects"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/comb_sort.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/comb_sort.h">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/insertion_sort.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/insertion_sort.h">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/selection_sort.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/selection_sort.h">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/shell_sort.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/shell_sort.h">
+			<Option target="algorithms"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/generators/generators.c">
 			<Option target="new-projects"/>
 			<Option target="sorting_complexity"/>
@@ -185,9 +209,6 @@
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\algorithms\"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/data_structures/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\libs\data_structures\"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\sorting_complexity\"/>

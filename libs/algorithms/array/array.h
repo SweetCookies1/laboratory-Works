@@ -7,6 +7,8 @@
 
 int compare_ints(const void *a, const void *b);
 
+void swap_void(void *a, void *b, const size_t baseTypeSize);
+
 int cmp_long_long(const void *pa, const void *pb);
 
 int countNUnique(long long *a, int n);
@@ -57,14 +59,11 @@ int getNegativeCount(const int *a, const size_t n);
 
 int getCountIf(const int *a, const size_t n, int (*f)(int));
 
-//обменивает значения по адресам переменных a и b
 void swap(int *a, int *b);
 
 void reverseArray(int *a, size_t n);
 
 int isPalindrom(const int *a, const size_t n);
-
-void sortChoice(int *a, size_t n);
 
 void removeAllOddElements(int *a, size_t *n);
 
@@ -76,9 +75,7 @@ void deleteByPosUnsaveOrder(int *a, size_t *n, size_t pos);
 
 void forEach(int *a, const size_t size, void (*f)(int *));
 
-
 int any(const int *a, const size_t size, int (*f)(int));
-
 
 int all(const int *a, const size_t size, int (*f)(int));
 

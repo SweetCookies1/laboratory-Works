@@ -15,6 +15,18 @@ int compare_ints(const void *a, const void *b) {
     return 0;
 }
 
+void swap_void(void *a, void *b, const size_t baseTypeSize) {
+    char *pa = a;
+    char *pb = b;
+    for (int i = 0; i < baseTypeSize; i++) {
+        char t = *pa;
+        *pa = *pb;
+        *pb = t;
+        pa++;
+        pb++;
+    }
+}
+
 int cmp_long_long(const void *pa, const void *pb) {
     long long arg1 = *(const long long *) pa;
     long long arg2 = *(const long long *) pb;
@@ -258,16 +270,6 @@ int isPalindrom(const int *a, const size_t n) {
         if (a[i] != a[n - i - 1])
             return 0;
     return 1;
-}
-
-void sortChoice(int *a, size_t n) {
-    for (size_t i = 0; i < n - 1; i++) {
-        size_t minIndex = i;
-        for (size_t j = i; j < n; j++)
-            if (a[i] < a[minIndex])
-                minIndex = j;
-        swap(&a[i], &a[minIndex]);
-    }
 }
 
 void removeAllOddElements(int *a, size_t *n) {
