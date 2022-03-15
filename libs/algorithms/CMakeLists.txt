@@ -5,4 +5,4 @@ add_library(algorithms
         sorting/selection_sort.c
         sorting/shell_sort.c
         sorting/comb_sort.c
-        )
+        sorting/radix_sort.c sorting/radix_sort.h)

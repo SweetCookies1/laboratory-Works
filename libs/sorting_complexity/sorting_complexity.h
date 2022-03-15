@@ -11,6 +11,8 @@
 #include "../algorithms/sorting/insertion_sort.h"
 #include "../algorithms/sorting/selection_sort.h"
 #include "../algorithms/sorting/shell_sort.h"
+#include "../algorithms/sorting/radix_sort.h"
+
 
 typedef struct sortFunc {
     void (*sort)(int *a, size_t n); // указатель на функцию сортировки.

@@ -11,3 +11,5 @@ void insertionSort(int *a, const size_t size) {
         a[j] = t;
     }
 }
+
+

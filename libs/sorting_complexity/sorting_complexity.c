@@ -54,7 +54,8 @@ void timeExperiment() {
             {selectionSort, "selectionSort"},
             {combsort, "combsort"},
             {insertionSort, "insertionSort"},
-            {shellSort, "shellSort"}
+            {shellSort, "shellSort"},
+            {radixSort, "radixSort"}
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sortFuncs);

@@ -3,9 +3,9 @@
 #include "generators.h"
 
 void generateRandomArray(int *a, const size_t n) {
-    for (size_t i = 0; i < n; i++) {
-        srand(time(0));
-        a[i] = rand();
+    srand(time(NULL));
+    for (register size_t i = 0; i < n; i++) {
+        a[i] = rand() % 1000000;
     }
 }
 
@@ -16,5 +16,5 @@ void generateOrderedArray(int *a, const size_t n) {
 
 void generateOrderedBackwardsArray(int *a, const size_t n) {
     for (size_t i = 0; i < n; i++)
-        a[i] = n - i - 1;
+        a[i] = n - i;
 }

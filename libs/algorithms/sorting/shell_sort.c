@@ -1,17 +1,8 @@
 #include "shell_sort.h"
 
-void shellSort(int *const a, const size_t n) {
-    size_t d = n / 2;
-    while (d > 0) {
-        for (size_t i = d; i < n; i += d) {
-            int t = a[i];
-            size_t j = i;
-            while (j > 0 && a[j - d] > t) {
-                a[j] = a[j - d];
-                j -= d;
-            }
-            a[j] = t;
-        }
-        d /= 2;
-    }
+void shellSort(int *a, size_t size) {
+    for (int d = size / 2; d > 0; d /= 2)
+        for (int i = d; i < size; ++i)
+            for (int j = i - d; j >= 0 && a[j] > a[j + d]; j -= d)
+                swap(&a[j], &a[j + d]);
 }

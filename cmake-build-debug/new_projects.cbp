@@ -172,6 +172,12 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/insertion_sort.h">
 			<Option target="algorithms"/>
 		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/radix_sort.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/radix_sort.h">
+			<Option target="algorithms"/>
+		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/selection_sort.c">
 			<Option target="algorithms"/>
 		</Unit>

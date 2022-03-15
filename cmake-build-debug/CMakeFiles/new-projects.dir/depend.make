@@ -22,4 +22,12 @@ CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj: \
  ../libs/sorting_complexity/sorting_complexity.c \
  ../libs/sorting_complexity/sorting_complexity.h
 CMakeFiles/new-projects.dir/main.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/algorithms/sorting/bubble_sort.h \
+ ../libs/algorithms/sorting/comb_sort.h \
+ ../libs/algorithms/sorting/insertion_sort.h \
+ ../libs/algorithms/sorting/selection_sort.h \
+ ../libs/algorithms/sorting/shell_sort.h \
+ ../libs/sorting_complexity/generators/generators.h \
+ ../libs/sorting_complexity/sorting_complexity.h \
  ../main.c
