@@ -178,30 +178,6 @@ libs/algorithms/array/array.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.s
 .PHONY : libs/algorithms/array/array.c.s
 
-libs/algorithms/sorting/bubble_sort.obj: libs/algorithms/sorting/bubble_sort.c.obj
-.PHONY : libs/algorithms/sorting/bubble_sort.obj
-
-# target to build an object file
-libs/algorithms/sorting/bubble_sort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj
-.PHONY : libs/algorithms/sorting/bubble_sort.c.obj
-
-libs/algorithms/sorting/bubble_sort.i: libs/algorithms/sorting/bubble_sort.c.i
-.PHONY : libs/algorithms/sorting/bubble_sort.i
-
-# target to preprocess a source file
-libs/algorithms/sorting/bubble_sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.i
-.PHONY : libs/algorithms/sorting/bubble_sort.c.i
-
-libs/algorithms/sorting/bubble_sort.s: libs/algorithms/sorting/bubble_sort.c.s
-.PHONY : libs/algorithms/sorting/bubble_sort.s
-
-# target to generate assembly for a file
-libs/algorithms/sorting/bubble_sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\new-projects.dir\build.make CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.s
-.PHONY : libs/algorithms/sorting/bubble_sort.c.s
-
 libs/sorting_complexity/generators/generators.obj: libs/sorting_complexity/generators/generators.c.obj
 .PHONY : libs/sorting_complexity/generators/generators.obj
 
@@ -288,9 +264,6 @@ help:
 	@echo ... libs/algorithms/array/array.obj
 	@echo ... libs/algorithms/array/array.i
 	@echo ... libs/algorithms/array/array.s
-	@echo ... libs/algorithms/sorting/bubble_sort.obj
-	@echo ... libs/algorithms/sorting/bubble_sort.i
-	@echo ... libs/algorithms/sorting/bubble_sort.s
 	@echo ... libs/sorting_complexity/generators/generators.obj
 	@echo ... libs/sorting_complexity/generators/generators.i
 	@echo ... libs/sorting_complexity/generators/generators.s

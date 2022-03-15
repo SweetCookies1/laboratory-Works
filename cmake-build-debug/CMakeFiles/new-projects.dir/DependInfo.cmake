@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/user/CLionProjects/new-projects/libs/algorithms/array/array.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj"
-  "C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/bubble_sort.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj"
   "C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/generators/generators.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj"
   "C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/sorting_complexity.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj"
   "C:/Users/user/CLionProjects/new-projects/main.c" "C:/Users/user/CLionProjects/new-projects/cmake-build-debug/CMakeFiles/new-projects.dir/main.c.obj"

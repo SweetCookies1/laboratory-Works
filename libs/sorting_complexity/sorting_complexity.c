@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "sorting_complexity.h"
 
 #define ARRAY_SIZE(a) sizeof(a) / sizeof(a[0])

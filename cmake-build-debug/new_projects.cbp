@@ -153,41 +153,10 @@
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/array/array.h">
 			<Option target="new-projects"/>
 		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/bubble_sort.c">
-			<Option target="new-projects"/>
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/sort.c">
 			<Option target="algorithms"/>
 		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/bubble_sort.h">
-			<Option target="new-projects"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/comb_sort.c">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/comb_sort.h">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/insertion_sort.c">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/insertion_sort.h">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/radix_sort.c">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/radix_sort.h">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/selection_sort.c">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/selection_sort.h">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/shell_sort.c">
-			<Option target="algorithms"/>
-		</Unit>
-		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/shell_sort.h">
+		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/algorithms/sorting/sort.h">
 			<Option target="algorithms"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/new-projects/libs/sorting_complexity/generators/generators.c">

@@ -3,15 +3,13 @@
 
 #include <stddef.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 #include "../algorithms/array/array.h"
 #include "generators/generators.h"
-#include "../algorithms/sorting/bubble_sort.h"
-#include "../algorithms/sorting/comb_sort.h"
-#include "../algorithms/sorting/insertion_sort.h"
-#include "../algorithms/sorting/selection_sort.h"
-#include "../algorithms/sorting/shell_sort.h"
-#include "../algorithms/sorting/radix_sort.h"
+#include "../algorithms/sorting/sort.h"
 
 
 typedef struct sortFunc {
