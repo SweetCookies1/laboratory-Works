@@ -15,7 +15,7 @@ void checkTime(void (*sort)(int *, size_t),
                char *experimentName) {
     static size_t runCounter = 1;
 
-    static int innerBuffer[100000];
+    static int innerBuffer[250000];
     generate(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf("Name: %s\n", experimentName);
@@ -47,25 +47,25 @@ void checkTime(void (*sort)(int *, size_t),
 
 void timeExperiment() {
     sortFunc sortFuncs[] = {
-            {bubbleSort, "bubbleSort"},
-            {selectionSort, "selectionSort"},
-            {combsort, "combsort"},
-            {insertionSort, "insertionSort"},
-            {shellSort, "shellSort"},
-            {radixSort, "radixSort"}
+          //  {bubbleSort, "bubbleSort"},
+              {selectionSort, "selectionSort"},
+          //  {combsort, "combsort"},
+          //  {insertionSort, "insertionSort"},
+          //  {shellSort, "shellSort"},
+          //  {radixSort, "radixSort"}
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sortFuncs);
 
     generateFunc generateFuncs[] = {
             {generateRandomArray,           "random"},
-            {generateOrderedArray,          "ordered"},
-            {generateOrderedBackwardsArray, "orderedBackwards"}
+      //      {generateOrderedArray,          "ordered"},
+      //      {generateOrderedBackwardsArray, "orderedBackwards"}
     };
 
     const unsigned CASES_N = ARRAY_SIZE(generateFuncs);
 
-    for (size_t size = 10000; size <= 100000; size += 10000) {
+    for (size_t size = 250000; size <= 250000; size += 50000) {
         printf("------------------------------\n");
         printf("size: %zu\n", size);
         for (size_t i = 0; i < FUNCS_N; i++) {
@@ -77,6 +77,81 @@ void timeExperiment() {
                 checkTime(sortFuncs[i].sort,
                           generateFuncs[j].generate,
                           size, filename);
+            }
+        }
+        printf("\n");
+    }
+}
+
+void checkNComps(long long (*sortFunc)(int *, size_t),
+                 void (*generateFunc)(int *, size_t),
+                 size_t size, char *experimentName) {
+    static size_t runCounter = 1;
+
+    static int innerBuffer[100000];
+    generateFunc(innerBuffer, size);
+    printf("Run #%zu| ", runCounter++);
+    printf("Name : %s\n", experimentName);
+
+    size_t nComps = sortFunc(innerBuffer, size);
+
+    printf("Status: ");
+    if (isNonDescendingSorted(innerBuffer, size)) {
+        printf("OK! nComps : %lld\n", nComps);
+
+        char filename[256];
+        sprintf(filename, "./data/%s.csv", experimentName);
+
+        FILE *f = fopen(filename, "a");
+        if (f == NULL) {
+            printf("FileOpenError %s", filename);
+            exit(1);
+        }
+        fprintf(f, "%zu; %lld\n", size, nComps);
+        fclose(f);
+    } else {
+        printf("Wrong!\n");
+
+        outputArray_(innerBuffer, size);
+        exit(1);
+    }
+}
+
+void compsExperiment() {
+    sortFunc sorts[] = {
+            {getSelectionSortNCompare, "selectionSort"},
+            {getInsertionSortNCompare, "insertionSort"},
+            {getBubbleSortNCompare,    "bubbleSort"},
+            {getCombSortNCompare,      "combsort"},
+            {getShellSortNCompare,     "shellSort"},
+            {getRadixSortNCompare,     "radixSort"},
+    };
+    const unsigned FUNCS_N = ARRAY_SIZE(sorts);
+
+    // описание функций генерации
+    generateFunc generatingFuncs[] = {
+            // генерируется случайный массив
+            {generateRandomArray,      "random"},
+            // генерируется массив 0, 1, 2, ..., n - 1
+            {generateOrderedArray,     "ordered"},
+            // генерируется массив n - 1, n - 2, ..., 0
+            {generateOrderedBackwardsArray, "orderedBackwards"}
+    };
+    const unsigned CASES_N = ARRAY_SIZE(generatingFuncs);
+
+    // запись статистики в файл
+    for (size_t size = 10000; size <= 100000; size += 10000) {
+        printf("------------------------------\n");
+        printf(" Size : %d\n", size);
+        for (int i = 0; i < FUNCS_N; i++) {
+            for (int j = 0; j < CASES_N; j++) {
+                // генерация имени файла
+                static char filename[128];
+                sprintf(filename, "%s_%s_comps",
+                        sorts[i].name, generatingFuncs[j].name);
+                checkNComps(sorts[i].sort,
+                            generatingFuncs[j].generate,
+                            size, filename);
             }
         }
         printf("\n");

@@ -13,8 +13,6 @@ int cmp_long_long(const void *pa, const void *pb);
 
 int countNUnique(long long *a, int n);
 
-void insertionSort(int *a, const size_t size);
-
 void inputArray_(int *a, size_t n);
 
 void outputArray_(const int *a, size_t n);

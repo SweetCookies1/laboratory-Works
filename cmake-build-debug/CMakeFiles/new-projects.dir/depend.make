@@ -4,30 +4,20 @@
 CMakeFiles/new-projects.dir/libs/algorithms/array/array.c.obj: \
  ../libs/algorithms/array/array.c \
  ../libs/algorithms/array/array.h
-CMakeFiles/new-projects.dir/libs/algorithms/sorting/bubble_sort.c.obj: \
- ../libs/algorithms/array/array.h \
- ../libs/algorithms/sorting/bubble_sort.c \
- ../libs/algorithms/sorting/bubble_sort.h
 CMakeFiles/new-projects.dir/libs/sorting_complexity/generators/generators.c.obj: \
  ../libs/sorting_complexity/generators/generators.c \
  ../libs/sorting_complexity/generators/generators.h
 CMakeFiles/new-projects.dir/libs/sorting_complexity/sorting_complexity.c.obj: \
  ../libs/algorithms/array/array.h \
- ../libs/algorithms/sorting/bubble_sort.h \
- ../libs/algorithms/sorting/comb_sort.h \
- ../libs/algorithms/sorting/insertion_sort.h \
- ../libs/algorithms/sorting/selection_sort.h \
- ../libs/algorithms/sorting/shell_sort.h \
+ ../libs/algorithms/sorting/sort.h \
+ ../libs/algorithms/sorting/sort_n_comp.h \
  ../libs/sorting_complexity/generators/generators.h \
  ../libs/sorting_complexity/sorting_complexity.c \
  ../libs/sorting_complexity/sorting_complexity.h
 CMakeFiles/new-projects.dir/main.c.obj: \
  ../libs/algorithms/array/array.h \
- ../libs/algorithms/sorting/bubble_sort.h \
- ../libs/algorithms/sorting/comb_sort.h \
- ../libs/algorithms/sorting/insertion_sort.h \
- ../libs/algorithms/sorting/selection_sort.h \
- ../libs/algorithms/sorting/shell_sort.h \
+ ../libs/algorithms/sorting/sort.h \
+ ../libs/algorithms/sorting/sort_n_comp.h \
  ../libs/sorting_complexity/generators/generators.h \
  ../libs/sorting_complexity/sorting_complexity.h \
  ../main.c
