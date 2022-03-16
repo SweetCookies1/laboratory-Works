@@ -17,6 +17,11 @@ typedef struct sortFunc {
     char name[64];                  // имя сортировки, используемое при выводе.
 } sortFunc;
 
+typedef struct sortFuncNComp {
+    long long (*sort)(int *a, size_t n); // указатель на функцию сортировки.
+    char name[64];                  // имя сортировки, используемое при выводе.
+} sortFuncNComp;
+
 typedef struct generateFunc {
     void (*generate)(int *a, size_t n); // указатель на функцию генерации последовательности.
     char name[64];                      // имя генератора, используемое при выводе.
@@ -28,8 +33,8 @@ void checkTime(void (*sort)(int *, size_t),
 
 void timeExperiment();
 
-void checkNComps(long long (*sortFunc )(int *, size_t),
-                 void (*generateFunc )(int *, size_t),
+void checkNComps(long long int (*sortFunc)(int *, size_t),
+                 void (*generateFunc)(int *, size_t),
                  size_t size, char *experimentName);
 
 void compsExperiment();

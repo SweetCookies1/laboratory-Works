@@ -8,9 +8,9 @@
 
 void bubbleSort(int *a, size_t size);
 
-void combsort(int *a, const size_t size);
+void combsort(int *a, size_t size);
 
-void insertionSort(int *a, const size_t size);
+void insertionSort(int *a, size_t size);
 
 void getPrefixSums(int *a, size_t size);
 
@@ -18,6 +18,8 @@ void radixSort(int *a, size_t size);
 
 void selectionSort(int *a, size_t size);
 
-void shellSort(int *const a, const size_t n);
+void shellSort(int *a, size_t n);
+
+void mergeSort(int *a, const size_t n);
 
 #endif //NEW_PROJECTS_SORT_H
