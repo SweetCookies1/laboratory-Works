@@ -6,14 +6,7 @@
 #include <memory.h>
 #include "../array/array.h"
 
-void getMergeComps(const int *a, const size_t sizeA,
-                   const int *b, const size_t sizeB,
-                   int *c);
-
-void _getMergeSortComps(int *a, int left, int right,
-                        int *buf);
-
-long long getMergeSortComps(int *a, size_t n);
+long long getBubbleSortNComps(int *a, const size_t n);
 
 long long getSelectionSortNCompare(int *a, size_t size);
 

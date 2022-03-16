@@ -1,46 +1,14 @@
 #include "sort_n_comp.h"
 #include "sort.h"
 
-long long nCompsMergeSort;
-void getMergeComps(const int *a, const size_t sizeA,
-                  const int *b, const size_t sizeB,
-                  int *c) {
-    size_t indexA = 0;
-    size_t indexB = 0;
-    while (++nCompsMergeSort && (indexA < sizeA || indexB < sizeB))
-        if (++nCompsMergeSort && (indexB == sizeB || indexA < sizeA && a[indexA] < b[indexB])) {
-            c[indexA + indexB] = a[indexA];
-            indexA++;
-        } else {
-            c[indexA + indexB] = b[indexB];
-            indexB++;
-        }
-}
+long long getBubbleSortNComps(int *a, const size_t n) {
+    long long nComps = 0;
+    for (int i = 0; ++nComps && i < n; ++i)
+        for (int j = i; ++nComps && j < n; ++j)
+            if (++nComps && a[i] > a[j])
+                swap(&a[i], &a[j]);
 
-void _getMergeSortComps(int *a, int left, int right,
-                        int *buf) {
-    int size = right - left;
-    if (++nCompsMergeSort && size <= 1)
-        return;
-
-    int middle = left + (right - left) / 2;
-    _getMergeSortComps(a, left, middle, buf);
-    _getMergeSortComps(a, middle, right, buf);
-
-    getMergeComps(a + left, middle - left,
-                  a + middle, right - middle,
-                  buf);
-    memcpy(a + left, buf, size * sizeof(int));
-}
-
-long long getMergeSortComps(int *a, size_t n) {
-    nCompsMergeSort = 0;
-
-    int *buffer = (int *) malloc(sizeof(int) * n);
-    _getMergeSortComps(a, 0, n, buffer);
-    free(buffer);
-
-    return nCompsMergeSort;
+    return nComps;
 }
 
 long long getSelectionSortNCompare(int *a, size_t size) {

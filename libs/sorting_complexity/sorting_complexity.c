@@ -47,12 +47,12 @@ void checkTime(void (*sort)(int *, size_t),
 
 void timeExperiment() {
     sortFunc sortFuncs[] = {
-            {mergeSort,    "mergeSort"},
-         //   {selectionSort, "selectionSort"},
-         //   {combsort,      "combsort"},
-          //  {insertionSort, "insertionSort"},
-          //  {shellSort,     "shellSort"},
-           // {radixSort,     "radixSort"}
+            {bubbleSort,    "bubbleSort"},
+            {selectionSort, "selectionSort"},
+            {combsort,      "combsort"},
+            {insertionSort, "insertionSort"},
+            {shellSort,     "shellSort"},
+            {radixSort,     "radixSort"}
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sortFuncs);
@@ -119,12 +119,12 @@ void checkNComps(long long int(*sortFunc)(int *, size_t),
 
 void compsExperiment() {
     sortFuncNComp sorts[] = {
-            {getMergeSortComps, "mergeSort"},
-            {getSelectionSortNCompare, "selectionSort"},
-            {getInsertionSortNCompare, "insertionSort"},
-            {getCombSortNCompare, "combsort"},
-            {getShellSortNCompare, "shellSort"},
-            {getRadixSortNCompare, "radixSort"},
+            {getBubbleSortNComps, "bubbleSort"},
+         //   {getSelectionSortNCompare, "selectionSort"},
+         //   {getInsertionSortNCompare, "insertionSort"},
+          //  {getCombSortNCompare, "combsort"},
+          //  {getShellSortNCompare, "shellSort"},
+          //  {getRadixSortNCompare, "radixSort"},
     };
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);
 
