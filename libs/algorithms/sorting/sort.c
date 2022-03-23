@@ -44,6 +44,18 @@ void getPrefixSums(int *a, size_t size) {
     }
 }
 
+long long getPrefixSumsComp(int *a, size_t size) {
+    long long nCompares = 0;
+    int prev = a[0];
+    *a = 0;
+    for (int i = 1; i < size && ++nCompares; i++) {
+        int t = a[i];
+        a[i] = prev + a[i - 1];
+        prev = t;
+    }
+    return nCompares;
+}
+
 void radixSort(int *a, size_t size) {
     int *buffer = (int *) calloc(size, sizeof(int));
     int max = 0b11111111;

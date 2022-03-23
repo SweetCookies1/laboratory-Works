@@ -45,7 +45,7 @@ long long getCombSortNCompare(int *a, size_t size) {
     long long nCompares = 0;
     size_t step = size;
     int swapped = 1;
-    while (step > 1 && ++nCompares || swapped) {
+    while ((step > 1 || swapped) && ++nCompares) {
         if (step > 1 && ++nCompares)
             step /= 1.24733;
         swapped = 0;
@@ -62,7 +62,7 @@ long long getShellSortNCompare(int *a, size_t size) {
     long long nCompares = 0;
     for (int d = size / 2; d > 0 && ++nCompares; d /= 2)
         for (int i = d; i < size && ++nCompares; ++i)
-            for (int j = i - d; j >= 0 && a[j] > a[j + d]; j -= d) {
+            for (int j = i - d; j >= 0 && a[j] > a[j + d] && ++nCompares; j -= d) {
                 nCompares += 2;
                 swap(&a[j], &a[j + d]);
             }
@@ -81,7 +81,7 @@ long long getRadixSortNCompare(int *a, size_t size) {
 
         for (size_t i = 0; i < size && ++nCompares; i++) {
             int curByte;
-            if (byte + 1 == sizeof(int))
+            if (byte + 1 == sizeof(int) && ++nCompares)
                 curByte = ((a[i] >> (byte * step)) + CHAR_MAX + 1) & max;
             else
                 curByte = (a[i] >> (byte * step)) & max;
@@ -89,11 +89,11 @@ long long getRadixSortNCompare(int *a, size_t size) {
             values[curByte]++;
         }
 
-        getPrefixSums(values, UCHAR_MAX + 1);
+        nCompares += getPrefixSumsComp(values, UCHAR_MAX + 1);
 
         for (size_t i = 0; i < size && ++nCompares; i++) {
             int curByte;
-            if (byte + 1 == sizeof(int))
+            if (byte + 1 == sizeof(int) && ++nCompares)
                 curByte = ((a[i] >> (byte * step)) + CHAR_MAX + 1) & max;
             else
                 curByte = (a[i] >> (byte * step)) & max;

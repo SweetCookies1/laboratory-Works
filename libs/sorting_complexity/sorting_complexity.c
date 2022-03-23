@@ -9,13 +9,13 @@
     clock_t sortingTime = endTime - startTime; \
     time = (double) sortingTime / CLOCKS_PER_SEC; \
 }
-
+/*
 void checkTime(void (*sort)(int *, size_t),
                void (*generate)(int *, size_t), size_t size,
                char *experimentName) {
     static size_t runCounter = 1;
 
-    static int innerBuffer[50000000];
+    static int innerBuffer[100000];
     generate(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf("Name: %s\n", experimentName);
@@ -49,10 +49,10 @@ void timeExperiment() {
     sortFunc sortFuncs[] = {
             {bubbleSort,    "bubbleSort"},
             {selectionSort, "selectionSort"},
-            {combsort,      "combsort"},
+           // {combsort,      "combsort"},
             {insertionSort, "insertionSort"},
-            {shellSort,     "shellSort"},
-            {radixSort,     "radixSort"}
+           // {shellSort,     "shellSort"},
+           // {radixSort,     "radixSort"}
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sortFuncs);
@@ -65,7 +65,7 @@ void timeExperiment() {
 
     const unsigned CASES_N = ARRAY_SIZE(generateFuncs);
 
-    for (size_t size = 5000000; size <= 50000000; size += 5000000) {
+    for (size_t size = 10000; size <= 100000; size += 10000) {
         printf("------------------------------\n");
         printf("size: %zu\n", size);
         for (size_t i = 0; i < FUNCS_N; i++) {
@@ -82,7 +82,7 @@ void timeExperiment() {
         printf("\n");
     }
 }
-
+*/
 void checkNComps(long long int(*sortFunc)(int *, size_t),
                  void (*generateFunc)(int *, size_t),
                  size_t size, char *experimentName) {
@@ -119,12 +119,12 @@ void checkNComps(long long int(*sortFunc)(int *, size_t),
 
 void compsExperiment() {
     sortFuncNComp sorts[] = {
-            {getBubbleSortNComps, "bubbleSort"},
-         //   {getSelectionSortNCompare, "selectionSort"},
-         //   {getInsertionSortNCompare, "insertionSort"},
-          //  {getCombSortNCompare, "combsort"},
-          //  {getShellSortNCompare, "shellSort"},
-          //  {getRadixSortNCompare, "radixSort"},
+       //     {getBubbleSortNComps, "bubbleSort"},
+       //     {getSelectionSortNCompare, "selectionSort"},
+      //      {getInsertionSortNCompare, "insertionSort"},
+      //      {getCombSortNCompare, "combsort"},
+            {getShellSortNCompare, "shellSort"},
+      //      {getRadixSortNCompare, "radixSort"},
     };
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);
 

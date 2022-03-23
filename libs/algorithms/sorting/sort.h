@@ -14,6 +14,8 @@ void insertionSort(int *a, const size_t size);
 
 void getPrefixSums(int *a, size_t size);
 
+long long getPrefixSumsComp(int *a, size_t size);
+
 void radixSort(int *a, size_t size);
 
 void selectionSort(int *a, size_t size);
