@@ -106,3 +106,17 @@ void shellSort(int *a, size_t size) {
             for (int j = i - d; j >= 0 && a[j] > a[j + d]; j -= d)
                 swap(&a[j], &a[j + d]);
 }
+
+void gnomeSort(int *a, size_t n) {
+    int i = 0;
+    while (i < n) {
+        if (i == 0)
+            i++;
+        if (a[i] >= a[i - 1])
+            i++;
+        else {
+            swap(&a[i], &a[i - 1]);
+            i--;
+        }
+    }
+}

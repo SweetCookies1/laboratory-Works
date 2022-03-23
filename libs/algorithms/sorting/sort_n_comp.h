@@ -18,4 +18,6 @@ long long getShellSortNCompare(int *a, size_t size);
 
 long long getRadixSortNCompare(int *a, size_t size);
 
+long long getGnomeSortNCompare(int *a, size_t n);
+
 #endif //NEW_PROJECTS_SORT_N_COMP_H

@@ -14,14 +14,11 @@ long long getBubbleSortNComps(int *a, const size_t n) {
 long long getSelectionSortNCompare(int *a, size_t size) {
     long long nCompares = 0;
     for (int i = 0; ++nCompares && i < size; i++) {
-        int min = a[i];
         int minIndex = i;
         for (int j = i + 1; ++nCompares && j < size; j++)
-            if (++nCompares && a[j] < min) {
-                min = a[j];
+            if (++nCompares && a[j] < a[minIndex]) {
                 minIndex = j;
             }
-        if (++nCompares && i != minIndex)
             swap(&a[i], &a[minIndex]);
     }
     return nCompares;
@@ -45,12 +42,12 @@ long long getCombSortNCompare(int *a, size_t size) {
     long long nCompares = 0;
     size_t step = size;
     int swapped = 1;
-    while ((step > 1 || swapped) && ++nCompares) {
-        if (step > 1 && ++nCompares)
+    while (++nCompares && (step > 1 || swapped)) {
+        if (++nCompares && step > 1)
             step /= 1.24733;
         swapped = 0;
-        for (size_t i = 0, j = i + step; j < size && ++nCompares; ++i, ++j)
-            if (a[i] > a[j] && ++nCompares) {
+        for (size_t i = 0, j = i + step; ++nCompares && j < size; ++i, ++j)
+            if (++nCompares && a[i] > a[j]) {
                 swap(&a[i], &a[j]);
                 swapped = 1;
             }
@@ -60,9 +57,9 @@ long long getCombSortNCompare(int *a, size_t size) {
 
 long long getShellSortNCompare(int *a, size_t size) {
     long long nCompares = 0;
-    for (int d = size / 2; d > 0 && ++nCompares; d /= 2)
-        for (int i = d; i < size && ++nCompares; ++i)
-            for (int j = i - d; j >= 0 && a[j] > a[j + d] && ++nCompares; j -= d) {
+    for (int d = size / 2; ++nCompares && d > 0; d /= 2)
+        for (int i = d; ++nCompares && i < size; ++i)
+            for (int j = i - d; ++nCompares && j >= 0 && a[j] > a[j + d]; j -= d) {
                 nCompares += 2;
                 swap(&a[j], &a[j + d]);
             }
@@ -76,12 +73,12 @@ long long getRadixSortNCompare(int *a, size_t size) {
     int max = 0b11111111;
     int step = 8;
 
-    for (int byte = 0; byte < sizeof(int) && ++nCompares; byte++) {
+    for (int byte = 0; ++nCompares && byte < sizeof(int); byte++) {
         int values[UCHAR_MAX + 1] = {0};
 
-        for (size_t i = 0; i < size && ++nCompares; i++) {
+        for (size_t i = 0; ++nCompares && i < size; i++) {
             int curByte;
-            if (byte + 1 == sizeof(int) && ++nCompares)
+            if (++nCompares && byte + 1 == sizeof(int))
                 curByte = ((a[i] >> (byte * step)) + CHAR_MAX + 1) & max;
             else
                 curByte = (a[i] >> (byte * step)) & max;
@@ -91,9 +88,9 @@ long long getRadixSortNCompare(int *a, size_t size) {
 
         nCompares += getPrefixSumsComp(values, UCHAR_MAX + 1);
 
-        for (size_t i = 0; i < size && ++nCompares; i++) {
+        for (size_t i = 0; ++nCompares && i < size; i++) {
             int curByte;
-            if (byte + 1 == sizeof(int) && ++nCompares)
+            if (++nCompares && byte + 1 == sizeof(int))
                 curByte = ((a[i] >> (byte * step)) + CHAR_MAX + 1) & max;
             else
                 curByte = (a[i] >> (byte * step)) & max;
@@ -105,4 +102,18 @@ long long getRadixSortNCompare(int *a, size_t size) {
     free(buffer);
 
     return nCompares;
+}
+
+long long getGnomeSortNCompare(int *a, size_t n) {
+    int i = 0;
+    long long nCompare = 0;
+    while (++nCompare && i < n) {
+        if (++nCompare && a[i] >= a[i - 1])
+            i++;
+        else {
+            swap(&a[i], &a[i - 1]);
+            i--;
+        }
+    }
+    return nCompare;
 }

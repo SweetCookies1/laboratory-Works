@@ -9,7 +9,7 @@
     clock_t sortingTime = endTime - startTime; \
     time = (double) sortingTime / CLOCKS_PER_SEC; \
 }
-/*
+
 void checkTime(void (*sort)(int *, size_t),
                void (*generate)(int *, size_t), size_t size,
                char *experimentName) {
@@ -49,10 +49,11 @@ void timeExperiment() {
     sortFunc sortFuncs[] = {
             {bubbleSort,    "bubbleSort"},
             {selectionSort, "selectionSort"},
-           // {combsort,      "combsort"},
+            {combsort,      "combsort"},
             {insertionSort, "insertionSort"},
-           // {shellSort,     "shellSort"},
-           // {radixSort,     "radixSort"}
+            {shellSort,     "shellSort"},
+            {radixSort,     "radixSort"},
+            {gnomeSort, "gnomeSort"}
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sortFuncs);
@@ -82,7 +83,7 @@ void timeExperiment() {
         printf("\n");
     }
 }
-*/
+
 void checkNComps(long long int(*sortFunc)(int *, size_t),
                  void (*generateFunc)(int *, size_t),
                  size_t size, char *experimentName) {
@@ -119,12 +120,13 @@ void checkNComps(long long int(*sortFunc)(int *, size_t),
 
 void compsExperiment() {
     sortFuncNComp sorts[] = {
-       //     {getBubbleSortNComps, "bubbleSort"},
-       //     {getSelectionSortNCompare, "selectionSort"},
-      //      {getInsertionSortNCompare, "insertionSort"},
-      //      {getCombSortNCompare, "combsort"},
-            {getShellSortNCompare, "shellSort"},
-      //      {getRadixSortNCompare, "radixSort"},
+           {getBubbleSortNComps, "bubbleSort"},
+           {getSelectionSortNCompare, "selectionSort"},
+           {getInsertionSortNCompare, "insertionSort"},
+           {getCombSortNCompare, "combsort"},
+           {getShellSortNCompare, "shellSort"},
+           {getRadixSortNCompare, "radixSort"},
+           {getGnomeSortNCompare, "getGnomeSortNCompare"},
     };
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);
 

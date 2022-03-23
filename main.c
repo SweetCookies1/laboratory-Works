@@ -2,7 +2,7 @@
 
 
 int main() {
-  //  timeExperiment();
-    compsExperiment();
+    timeExperiment();
+   // compsExperiment();
     return 0;
 }

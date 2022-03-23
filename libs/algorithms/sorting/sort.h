@@ -20,6 +20,8 @@ void radixSort(int *a, size_t size);
 
 void selectionSort(int *a, size_t size);
 
-void shellSort(int *const a, const size_t n);
+void shellSort(int *a, size_t n);
+
+void gnomeSort(int *a, size_t n);
 
 #endif //NEW_PROJECTS_SORT_H
